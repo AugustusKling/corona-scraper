@@ -70,3 +70,9 @@
 {"NUTS":"DE148","cumulatedInfected":102,"cumulatedRecoved":5,"scraper":"ravensburg","scrapedAt":"2020-03-19T21:59:27.135Z"}
 {"NUTS":"DE114","cumulatedInfected":110,"scraper":"rems-murr-kreis","scrapedAt":"2020-03-19T21:59:28.235Z"}
 {"NUTS":"DE149","cumulatedInfected":48,"scraper":"sigmaringen","scrapedAt":"2020-03-19T21:59:29.147Z"}
+{"NUTS":"DE147","cumulatedInfected":75,"cumulatedQuarantined":327,"scraper":"bodenseekreis","scrapedAt":"2020-03-19T22:59:16.934Z"}
+{"NUTS":"DE114","cumulatedInfected":91,"updateDate":"2020-03-19","scraper":"göppingen","scrapedAt":"2020-03-19T22:59:18.959Z"}
+{"NUTS":"DE138","cumulatedInfected":62,"scraper":"konstanz","scrapedAt":"2020-03-19T22:59:23.584Z"}
+{"NUTS":"DE148","cumulatedInfected":102,"cumulatedRecoved":5,"scraper":"ravensburg","scrapedAt":"2020-03-19T22:59:24.303Z"}
+{"NUTS":"DE114","cumulatedInfected":110,"scraper":"rems-murr-kreis","scrapedAt":"2020-03-19T22:59:25.347Z"}
+{"NUTS":"DE149","cumulatedInfected":48,"scraper":"sigmaringen","scrapedAt":"2020-03-19T22:59:26.375Z"}
