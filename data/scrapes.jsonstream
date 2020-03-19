@@ -4,3 +4,6 @@
 {"scrapedAt":"2020-03-19T08:03:13.257Z","NUTS":"DE148","cumulatedInfected":93,"cumulatedRecoved":5,"scraper":"ravensburg"}
 {"scrapedAt":"2020-03-19T08:03:14.071Z","NUTS":"DE149","cumulatedInfected":48,"scraper":"sigmaringen"}
 {"scrapedAt":"2020-03-19T08:03:15.126Z","NUTS":"DE147","cumulatedInfected":48,"cumulatedQuarantined":220,"scraper":"bodenseekreis"}
+{"scrapedAt":"2020-03-19T08:59:15.550Z","NUTS":"DE148","cumulatedInfected":93,"cumulatedRecoved":5,"scraper":"ravensburg"}
+{"scrapedAt":"2020-03-19T08:59:16.544Z","NUTS":"DE149","cumulatedInfected":48,"scraper":"sigmaringen"}
+{"scrapedAt":"2020-03-19T08:59:17.675Z","NUTS":"DE147","cumulatedInfected":48,"cumulatedQuarantined":220,"scraper":"bodenseekreis"}
