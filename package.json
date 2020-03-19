@@ -1,0 +1,19 @@
+{
+  "name": "corona-scraper",
+  "version": "1.0.0",
+  "description": "Scapes data 2019-nCov from websites and unifies it.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "scrape": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
