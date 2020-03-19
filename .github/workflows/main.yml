@@ -2,7 +2,7 @@ name: scrape
 
 on:
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '49 * * * *'
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn intall
+    - run: yarn install
     - run: yarn run build
     - run: yarn run scrape
     - name: Commit files
