@@ -1,19 +1,31 @@
-import { appendFileSync } from 'fs';
+import { appendFileSync, readdir } from 'fs';
 
-import { scraper as ravensburg } from './scrapers/ravensburg';
-import { scraper as sigmaringen } from './scrapers/sigmaringen';
-import { scraper as bodenseekreis } from './scrapers/bodenseekreis';
-import { scraper as konstanz } from './scrapers/konstanz';
+import { Scraper } from './scraper';
 
 async function scrape() {
-    for(const scraper of [ravensburg, sigmaringen, bodenseekreis, konstanz]) {
+    const scrapers = await new Promise<string[]>( ( resolve, reject ) => {
+        readdir( __dirname + '/scrapers', ( err, files ) => {
+            if ( err ) {
+                reject( err );
+            } else {
+                resolve( files );
+            }
+        } );
+    } );
+    for(const scraperName of scrapers) {
+        const scraper: Scraper = (await import( __dirname + '/scrapers/' + scraperName )).scraper;
+        const scraperId = scraperName.replace(/[.]js$/, '');
         try {
             const data = await scraper.get();
-            appendFileSync('data/scrapes.jsonstream', JSON.stringify(Object.assign(data, {scraper: scraper.id})) + '\n', {
+            const meta = {
+                scraper: scraperId,
+                scrapedAt: new Date().toISOString()
+            };
+            appendFileSync('data/scrapes.jsonstream', JSON.stringify(Object.assign(data, meta)) + '\n', {
                 flag: 'a+'
             });
         } catch (e) {
-            console.warn('Failed to scrape: ' + scraper.id, e);
+            console.warn('Failed to scrape: ' + scraperId, e);
         }
     }
 }
