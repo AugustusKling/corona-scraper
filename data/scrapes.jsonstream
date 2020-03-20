@@ -151,3 +151,8 @@
 {"NUTS":"DE148","cumulatedInfected":102,"cumulatedRecoved":5,"scraper":"ravensburg","scrapedAt":"2020-03-20T11:59:37.732Z"}
 {"NUTS":"DE114","cumulatedInfected":110,"scraper":"rems-murr-kreis","scrapedAt":"2020-03-20T11:59:40.261Z"}
 {"NUTS":"DE149","cumulatedInfected":58,"scraper":"sigmaringen","scrapedAt":"2020-03-20T11:59:41.148Z"}
+{"NUTS":"DE147","cumulatedInfected":75,"cumulatedQuarantined":327,"scraper":"bodenseekreis","scrapedAt":"2020-03-20T12:59:16.835Z"}
+{"NUTS":"DE138","cumulatedInfected":62,"scraper":"konstanz","scrapedAt":"2020-03-20T12:59:22.857Z"}
+{"NUTS":"DE148","cumulatedInfected":102,"cumulatedRecoved":5,"scraper":"ravensburg","scrapedAt":"2020-03-20T12:59:24.018Z"}
+{"NUTS":"DE114","cumulatedInfected":110,"scraper":"rems-murr-kreis","scrapedAt":"2020-03-20T12:59:25.065Z"}
+{"NUTS":"DE149","cumulatedInfected":58,"scraper":"sigmaringen","scrapedAt":"2020-03-20T12:59:25.928Z"}
