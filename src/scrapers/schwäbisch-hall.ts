@@ -8,7 +8,7 @@ class SchwäbischHall extends Scraper {
             /Stand: \w+, (.+) Uhr[^]+Im Landkreis Schw&auml;bisch Hall haben haben wir aktuell (\d+)&nbsp;best&auml;tigte Corona-Erkrankte./
         );
         return {
-            NUTS: 'DE119',
+            NUTS: 'DE11A',
             cumulatedInfected: parseInt(matches[2], 10),
             updateDate: moment.tz(matches[1], 'DD.MM.YYYY, HH:mm', 'Europe/Berlin').toISOString()
         };
