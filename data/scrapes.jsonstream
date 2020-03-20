@@ -190,3 +190,4 @@
 {"NUTS":"DE11A","cumulatedInfected":91,"updateDate":"2020-03-20T15:15:00.000Z","scraper":"schwäbisch-hall","scrapedAt":"2020-03-20T18:59:27.576Z"}
 {"NUTS":"DE149","cumulatedInfected":74,"scraper":"sigmaringen","scrapedAt":"2020-03-20T18:59:28.367Z"}
 {"NUTS":"DE11B","cumulatedInfected":43,"scraper":"main-tauber-kreis","scrapedAt":"2020-03-20T18:59:56.869Z"}
+{"NUTS":"DE11C","cumulatedInfected":50,"scraper":"heidenheim","scrapedAt":"2020-03-20T19:05:55.968Z"}
