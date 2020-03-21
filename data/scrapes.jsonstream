@@ -300,3 +300,17 @@
 {"NUTS":"DE149","cumulatedInfected":74,"scraper":"sigmaringen","scrapedAt":"2020-03-21T01:59:51.167Z"}
 {"NUTS":"DE144","cumulatedInfected":50,"updateDate":"2020-03-20T14:30:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-21T01:59:55.635Z"}
 {"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-21T01:59:57.795Z"}
+{"NUTS":"DE147","cumulatedInfected":75,"cumulatedQuarantined":327,"scraper":"bodenseekreis","scrapedAt":"2020-03-21T03:03:14.473Z"}
+{"NUTS":"DE114","cumulatedInfected":110,"updateDate":"2020-03-20","scraper":"göppingen","scrapedAt":"2020-03-21T03:03:17.487Z"}
+{"NUTS":"DE11C","cumulatedInfected":50,"scraper":"heidenheim","scrapedAt":"2020-03-21T03:03:18.612Z"}
+{"NUTS":"DE119","cumulatedInfected":178,"updateDate":"2020-03-19T17:00:00.000Z","scraper":"hohenlohekreis","scrapedAt":"2020-03-21T03:03:20.274Z"}
+{"NUTS":"DE138","cumulatedInfected":69,"scraper":"konstanz","scrapedAt":"2020-03-21T03:03:23.966Z"}
+{"NUTS":"DE11B","cumulatedInfected":43,"scraper":"main-tauber-kreis","scrapedAt":"2020-03-21T03:03:24.684Z"}
+{"NUTS":"DE11D","cumulatedInfected":138,"updateDate":"2020-03-19T23:00:00.000Z","scraper":"ostalbkreis","scrapedAt":"2020-03-21T03:03:26.057Z"}
+{"NUTS":"DE148","cumulatedInfected":102,"cumulatedRecoved":5,"scraper":"ravensburg","scrapedAt":"2020-03-21T03:03:32.315Z"}
+{"NUTS":"DE114","cumulatedInfected":115,"scraper":"rems-murr-kreis","scrapedAt":"2020-03-21T03:03:33.298Z"}
+{"NUTS":"DE141","cumulatedInfected":96,"updateDate":"2020-03-19T23:00:00.000Z","scraper":"reutlingen","scrapedAt":"2020-03-21T03:03:34.189Z"}
+{"NUTS":"DE11A","cumulatedInfected":91,"updateDate":"2020-03-20T15:15:00.000Z","scraper":"schwäbisch-hall","scrapedAt":"2020-03-21T03:03:35.025Z"}
+{"NUTS":"DE149","cumulatedInfected":74,"scraper":"sigmaringen","scrapedAt":"2020-03-21T03:03:35.969Z"}
+{"NUTS":"DE144","cumulatedInfected":50,"updateDate":"2020-03-20T14:30:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-21T03:03:38.973Z"}
+{"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-21T03:03:41.407Z"}
