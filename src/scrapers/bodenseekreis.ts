@@ -4,7 +4,7 @@ class Bodenseekreis extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.bodenseekreis.de/de/soziales-gesundheit/gesundheit/infektionsschutz/infektionskrankheiten/corona-virus/',
-            /labordiagnostisch bestätigte Infektionen:&nbsp;(\d+) Personen <\/b><\/li><li><b>in behördlich angeordneter häuslicher Quarantäne: circa&nbsp;(\d+) Personen/
+            /labordiagnostisch bestätigte Infektionen:&nbsp;(\d+) Personen[^]+in behördlich angeordneter häuslicher Quarantäne: circa&nbsp;(\d+) Personen/
         );
         return {
             NUTS: 'DE147',

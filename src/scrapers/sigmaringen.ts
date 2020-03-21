@@ -4,7 +4,7 @@ class Sigmaringen extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.landkreis-sigmaringen.de/de/Landratsamt/Kreisverwaltung/Fachbereiche/Gesundheit/Informationen-zum-neuartigen-Coronavirus',
-            /labordiagnostisch bestätigte Infektionen: <em>(\d+) Personen<\/em>/
+            /labordiagnostisch bestätigte Infektionen:\s*(?:<em>)?(\d+)/
         );
         return {
             NUTS: 'DE149',

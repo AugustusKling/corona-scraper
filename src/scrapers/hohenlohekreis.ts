@@ -5,12 +5,12 @@ class Hohenlohekreis extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.corona-im-hok.de/',
-            /Insgesamt sind damit (\d+) Coronavirus-Fälle im Hohenlohekreis nachgewiesen \(Stand (.+) Uhr\)/
+            /Mit Stand (.+?) hat der Hohenlohekreis (\d+) bestätigte Coronafälle/
         );
         return {
             NUTS: 'DE119',
-            cumulatedInfected: parseInt(matches[1], 10),
-            updateDate: moment.tz(matches[2], 'DD.MM.YYYY, HH', 'Europe/Berlin').toISOString()
+            cumulatedInfected: parseInt(matches[2], 10),
+            updateDate: moment.tz(matches[1], 'DD.MM.YYYY', 'Europe/Berlin').toISOString()
         };
     }
 }
