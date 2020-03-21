@@ -529,3 +529,5 @@
 {"NUTS":"DE11A","cumulatedInfected":98,"updateDate":"2020-03-20T17:45:00.000Z","scraper":"schwäbisch-hall","scrapedAt":"2020-03-21T16:59:35.018Z"}
 {"NUTS":"DE144","cumulatedInfected":50,"updateDate":"2020-03-20T14:30:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-21T16:59:37.496Z"}
 {"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-21T16:59:38.739Z"}
+{"NUTS":"DE125","cumulatedInfected":66,"updateDate":"2020-03-20","scraper":"heidelberg","scrapedAt":"2020-03-21T18:11:47.772Z"}
+{"NUTS":"DE128","cumulatedInfected":182,"updateDate":"2020-03-20","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-21T18:12:06.589Z"}
