@@ -7,7 +7,7 @@ class NeckarOdenwaldKreis extends Scraper {
             /Insgesamt gibt es nun (\d+) bestätigte Fälle im Kreis./
         );
         return {
-            NUTS: 'DE128',
+            NUTS: 'DE127',
             cumulatedInfected: parseInt(matches[1], 10)
         };
     }
