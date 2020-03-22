@@ -722,3 +722,4 @@
 {"NUTS":"DE13A","cumulatedInfected":32,"updateDate":"2020-03-21T13:00:00.000Z","scraper":"waldshut","scrapedAt":"2020-03-22T00:00:26.569Z"}
 {"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-22T00:00:27.663Z"}
 {"NUTS":"AT33","updateDate":null,"cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-22T00:19:06.949Z"}
+{"NUTS":"DEA29","cumulatedInfected":916,"scraper":"heinsberg","scrapedAt":"2020-03-22T00:32:55.944Z"}
