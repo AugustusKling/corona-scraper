@@ -1307,3 +1307,4 @@
 {"NUTS":"DE13A","cumulatedInfected":32,"updateDate":"2020-03-21T13:00:00.000Z","scraper":"waldshut","scrapedAt":"2020-03-22T11:59:58.971Z"}
 {"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-22T12:00:00.267Z"}
 {"NUTS":"DE27E","updateDate":"2020-03-21","cumulatedInfected":59,"cumulatedDeaths":2,"scraper":"oberallgäu","scrapedAt":"2020-03-22T12:05:00.849Z"}
+{"NUTS":"CH070","cumulatedInfected":939,"cumulatedDeaths":37,"scraper":"ticino","scrapedAt":"2020-03-22T12:25:28.598Z"}
