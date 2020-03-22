@@ -23,17 +23,26 @@ class ScraperImpl extends Scraper {
             });
         });
         
-        return records
+        const exceptSardegna = records
             .filter(record => record.denominazione_provincia !== 'In fase di definizione/aggiornamento')
             // Provinces changed in Sardegna and are not mappable to NUTS codes yet.
             .filter(record => record.denominazione_regione !== 'Sardegna')
             .map(record => {
                 return {
                     NUTS: codiceProvincialeToNuts[record.codice_provincia],
-                    cumulatedInfected: record.totale_casi,
+                    cumulatedInfected: parseInt(record.totale_casi, 10),
                     updateDate: moment.tz(record.data, 'YYYY-MM-DD HH:mm:ss', 'Europe/Rome').toISOString()
                 };
             });
+        const sardegnaTotal = records
+            .filter(record => record.denominazione_regione === 'Sardegna')
+            .map(record => ({ totale_casi: parseInt(record.totale_casi, 10) }))
+            .reduce((a, b) => ({ totale_casi: a.totale_casi + b.totale_casi }));
+        const sardegna = {
+            NUTS: 'ITG2',
+            cumulatedInfected: sardegnaTotal.totale_casi
+        };
+        return [...exceptSardegna, sardegna];
     }
 }
 
