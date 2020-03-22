@@ -2024,3 +2024,4 @@
 {"NUTS":"DE27C","cumulatedInfected":48,"updateDate":"2020-03-22T14:30:00.000Z","scraper":"unterallgäu","scrapedAt":"2020-03-22T17:13:20.970Z"}
 {"NUTS":"CH055","updateDate":"2020-03-20","cumulatedInfected":98,"scraper":"sankt-gallen","scrapedAt":"2020-03-22T18:44:09.681Z"}
 {"NUTS":"CH057","cumulatedInfected":75,"updateDate":"2020-03-22","scraper":"thurgau","scrapedAt":"2020-03-22T18:52:00.583Z"}
+{"NUTS":"CH056","updateDate":"2020-03-22","cumulatedInfected":257,"currentlyHospitalized":27,"cumulatedDeaths":5,"scraper":"graubünden","scrapedAt":"2020-03-22T19:15:35.799Z"}
