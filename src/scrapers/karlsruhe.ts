@@ -1,6 +1,6 @@
 import { Scraper } from '../scraper';
 
-class KarlsruheLandkreis extends Scraper {
+class Karlsruhe extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://corona.karlsruhe.de/',
@@ -18,4 +18,4 @@ class KarlsruheLandkreis extends Scraper {
     }
 }
 
-export const scraper = new KarlsruheLandkreis();
+export const scraper = new Karlsruhe();

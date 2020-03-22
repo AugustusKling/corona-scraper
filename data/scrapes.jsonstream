@@ -2172,3 +2172,4 @@
 {"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-22T20:30:56.255Z"}
 {"NUTS":"DE122","cumulatedInfected":71,"scraper":"karlsruhe","scrapedAt":"2020-03-22T21:00:40.861Z"}
 {"NUTS":"DE123","cumulatedInfected":186,"scraper":"karlsruhe","scrapedAt":"2020-03-22T21:00:40.861Z"}
+{"NUTS":"AT34","cumulatedInfected":282,"scraper":"vorarlberg","scrapedAt":"2020-03-22T21:05:56.645Z"}
