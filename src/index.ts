@@ -17,13 +17,16 @@ async function scrape() {
         const scraperId = scraperName.replace(/[.]js$/, '');
         try {
             const data = await scraper.get();
+            const dataPoints = Array.isArray(data) ? data : [data];
             const meta = {
                 scraper: scraperId,
                 scrapedAt: new Date().toISOString()
             };
-            appendFileSync('data/scrapes.jsonstream', JSON.stringify(Object.assign(data, meta)) + '\n', {
-                flag: 'a+'
-            });
+            for (const dataPoint of dataPoints) {
+                appendFileSync('data/scrapes.jsonstream', JSON.stringify(Object.assign(dataPoint, meta)) + '\n', {
+                    flag: 'a+'
+                });
+            }
         } catch (e) {
             console.warn('Failed to scrape: ' + scraperId, e);
         }

@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 export abstract class Scraper {
 
-    public abstract get(): Promise<Record<string, any>>;
+    public abstract get(): Promise<Record<string, any> | Record<string, any>[]>;
     
     protected async downloadAndMatch(url: string, matcher: RegExp): Promise<string[]> {
         const response = await fetch(url);
