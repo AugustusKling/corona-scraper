@@ -7,7 +7,7 @@ class ScraperImpl extends Scraper {
             /In Vorarlberg sind bisher \(.+?\) gesamt \d+ Verdachtsf&auml;lle aufgetreten, davon wurden \d+ negativ getestet, (\d+) positiv/
         );
         return {
-            NUTS: 'AT342',
+            NUTS: 'AT34',
             cumulatedInfected: parseInt(matches[1], 10)
         };
     }
