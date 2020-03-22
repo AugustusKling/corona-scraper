@@ -2170,3 +2170,5 @@
 {"NUTS":"DE27C","cumulatedInfected":48,"updateDate":"2020-03-22T14:30:00.000Z","scraper":"unterallgäu","scrapedAt":"2020-03-22T20:30:52.675Z"}
 {"NUTS":"DE13A","cumulatedInfected":32,"updateDate":"2020-03-21T13:00:00.000Z","scraper":"waldshut","scrapedAt":"2020-03-22T20:30:54.881Z"}
 {"NUTS":"DE143","cumulatedInfected":76,"updateDate":"2020-03-20T15:00:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-22T20:30:56.255Z"}
+{"NUTS":"DE122","cumulatedInfected":71,"scraper":"karlsruhe","scrapedAt":"2020-03-22T21:00:40.861Z"}
+{"NUTS":"DE123","cumulatedInfected":186,"scraper":"karlsruhe","scrapedAt":"2020-03-22T21:00:40.861Z"}
