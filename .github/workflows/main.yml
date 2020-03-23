@@ -2,7 +2,7 @@ name: scrape
 
 on:
   schedule:
-    - cron:  '55 * * * *'
+    - cron:  '55 */4 * * *'
 
 jobs:
   build:
