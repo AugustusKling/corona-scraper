@@ -4732,3 +4732,4 @@
 {"NUTS":"AT334","cumulatedInfected":311,"scraper":"tirol","scrapedAt":"2020-03-23T17:00:11.418Z"}
 {"NUTS":"AT335","cumulatedInfected":157,"scraper":"tirol","scrapedAt":"2020-03-23T17:00:11.418Z"}
 {"NUTS":"AT34","cumulatedInfected":282,"scraper":"vorarlberg","scrapedAt":"2020-03-23T17:00:13.621Z"}
+{"NUTS":"DE146","cumulatedInfected":73,"updateDate":"2020-03-23T16:30:00.000Z","scraper":"biberach","scrapedAt":"2020-03-23T17:09:22.824Z"}
