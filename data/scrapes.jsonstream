@@ -4866,3 +4866,4 @@
 {"NUTS":"AT334","cumulatedInfected":311,"scraper":"tirol","scrapedAt":"2020-03-23T20:56:48.976Z"}
 {"NUTS":"AT335","cumulatedInfected":157,"scraper":"tirol","scrapedAt":"2020-03-23T20:56:48.976Z"}
 {"NUTS":"AT34","cumulatedInfected":330,"scraper":"vorarlberg","scrapedAt":"2020-03-23T20:56:51.155Z"}
+{"NUTS":"CH052","cumulatedInfected":30,"updateDate":"2020-03-22T23:00:00.000Z","scraper":"schaffhausen","scrapedAt":"2020-03-23T21:25:59.078Z"}
