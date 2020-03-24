@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.gr.ch/DE/institutionen/verwaltung/djsg/ga/coronavirus/info/Seiten/Start.aspx',
-            /Fallzahlen\s+(.+?)<[^]+?Best&auml;tigte F&auml;lle: (\d+)[^]+?Personen in Spitalpflege: (\d+)[^]+?Verstorbene Personen: (\d+)/
+            /Fallzahlen\s+(.+?)<[^]+?Bestätigte Fälle: (\d+)[^]+?Personen in Spitalpflege: (\d+)[^]+?Verstorbene Personen: (\d+)/
         );
         return {
             NUTS: 'CH056',

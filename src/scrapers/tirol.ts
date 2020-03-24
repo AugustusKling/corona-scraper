@@ -8,7 +8,7 @@ class ScraperImpl extends Scraper {
             /Aktuelle Zahlen \(Stand: (.+?) Uhr\)[^]*In Tirol gibt es derzeit (.+?) positive Coronavirus-Testergebnisse[^]*>((?:\d|\.)+) Tests wurden in Tirol durchgeführt[^]*Innsbruck:\s*(\d+)[^]*Innsbruck-Land:\s*(\d+)[^]*Landeck:\s*(\d+)[^]*Imst:\s*(\d+)[^]*Lienz:\s*(\d+)[^]*Kufstein:\s*(\d+)[^]*Schwaz:\s*(\d+)[^]*Kitzbühel:\s*(\d+)[^]*Reutte:\s*(\d+)/
         );
         
-        const updateDate = moment.tz(matches[1], 'DD. MMM YYYY,&nbsp;HH.mm', 'de', 'Europe/Berlin').toISOString()
+        const updateDate = moment.tz(matches[1], 'DD. MMM YYYY, HH.mm', 'de', 'Europe/Berlin').toISOString()
         return [
             // Tyrol aggregate.
             {

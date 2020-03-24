@@ -8,7 +8,7 @@ class Rastatt extends Scraper {
             /In Baden-Baden haben sich inzwischen (\d+) Personen mit dem Virus infiziert, im Landkreis Rastatt (\d+) Personen.+?\(Stand (.+?) Uhr\)/
         );
         
-        const updateDate = moment.tz(matches[3].replace(/&auml;/, 'ä'), 'DD. MMM, HH', 'de', 'Europe/Berlin').toISOString()
+        const updateDate = moment.tz(matches[3], 'DD. MMM, HH', 'de', 'Europe/Berlin').toISOString()
         return [
             {
                 // Baden-Baden

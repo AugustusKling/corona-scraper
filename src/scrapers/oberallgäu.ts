@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.oberallgaeu.org/de/news/detail/corona:-newsticker-oberallgaeu.html',
-            /\+\+(.+?)\+\+\s*(\d+)(?:&nbsp;|\s)*F&auml;lle(?:&nbsp;|\s)*von Corona-Virus-Infektionen einschl.+(\d+)(?:&nbsp;|\s)*Todes/
+            /\+\+(.+?)\+\+\s*(\d+)\s*Fälle\s+von Corona-Virus-Infektionen einschl.+(\d+)|\s*Todes/
         );
         return {
             NUTS: 'DE27E',

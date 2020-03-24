@@ -4,7 +4,7 @@ class Ravensburg extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.rv.de/Startseite',
-            /Derzeit gibt es bei uns (\d+) bekannte\s+Coronavirus-Infektionsf&auml;lle.<br>\s+Unter diesen best&auml;tigten\s+F&auml;llen sind (\d+) Personen wieder als gesund\s+diagnostiziert./
+            /Derzeit gibt es bei uns (\d+) bekannte\s+Coronavirus-Infektionsfälle.<br>\s+Unter diesen bestätigten\s+Fällen sind (\d+) Personen wieder als gesund\s+diagnostiziert./
         );
         return {
             NUTS: 'DE148',

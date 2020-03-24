@@ -10,7 +10,8 @@ export abstract class Scraper {
             throw new Error('Failed to download: ' + response.statusText);
         }
         const responseText = await response.text();
-        const matches = responseText.match(matcher);
+        const responseNormalized = responseText.replace(/&nbsp;/g, ' ').replace(/&auml;/g, 'ä');
+        const matches = responseNormalized.match(matcher);
         if (matches) {
             return matches;
         } else {

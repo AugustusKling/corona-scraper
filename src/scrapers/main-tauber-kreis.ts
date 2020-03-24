@@ -5,7 +5,7 @@ class MainTauberKreis extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.main-tauber-kreis.de/Landratsamt/Aktuelles/Pressemitteilungen',
-            /Coronavirus-Infektion neu best&auml;tigt. Damit steigt die Gesamtzahl auf (\d+)/
+            /Coronavirus-Infektion neu bestätigt. Damit steigt die Gesamtzahl auf (\d+)/
         );
         return {
             NUTS: 'DE11B',
