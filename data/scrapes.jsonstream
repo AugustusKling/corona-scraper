@@ -5513,3 +5513,4 @@
 {"NUTS":"DE21M","cumulatedInfected":86,"updateDate":"2020-03-24","scraper":"traunstein","scrapedAt":"2020-03-24T19:52:26.851Z"}
 {"NUTS":"CH040","cumulatedInfected":1211,"updateDate":"2020-03-24T08:30:00.000Z","scraper":"zürich","scrapedAt":"2020-03-24T21:46:37.620Z"}
 {"NUTS":"CH053","cumulatedInfected":33,"cumulatedHospitalized":6,"cumulatedDeaths":2,"updateDate":"2020-03-24T09:00:00.000Z","scraper":"appenzell-ausserrhoden","scrapedAt":"2020-03-24T22:09:32.958Z"}
+{"NUTS":"CH054","cumulatedInfected":8,"updateDate":"2020-03-24T09:00:00.000Z","scraper":"appenzell-innerrhoden","scrapedAt":"2020-03-24T22:16:33.697Z"}
