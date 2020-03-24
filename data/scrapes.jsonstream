@@ -4020,7 +4020,7 @@
 {"NUTS":"DE149","cumulatedInfected":90,"scraper":"sigmaringen","scrapedAt":"2020-03-23T10:00:25.031Z"}
 {"NUTS":"DE144","cumulatedInfected":60,"updateDate":"2020-03-21T17:00:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-23T10:00:45.608Z"}
 {"NUTS":"CH057","cumulatedInfected":75,"updateDate":"2020-03-22","scraper":"thurgau","scrapedAt":"2020-03-23T10:00:46.869Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T10:00:47.690Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T10:00:47.690Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T10:00:48.623Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T10:00:48.623Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T10:00:48.623Z"}
@@ -4155,7 +4155,7 @@
 {"NUTS":"DE149","cumulatedInfected":90,"scraper":"sigmaringen","scrapedAt":"2020-03-23T11:00:00.746Z"}
 {"NUTS":"DE144","cumulatedInfected":60,"updateDate":"2020-03-21T17:00:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-23T11:00:06.065Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-23T11:00:07.413Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T11:00:08.298Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T11:00:08.298Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T11:00:09.250Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T11:00:09.250Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T11:00:09.250Z"}
@@ -4290,7 +4290,7 @@
 {"NUTS":"DE149","cumulatedInfected":90,"scraper":"sigmaringen","scrapedAt":"2020-03-23T12:00:04.733Z"}
 {"NUTS":"DE144","cumulatedInfected":60,"updateDate":"2020-03-21T17:00:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-23T12:00:10.168Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-23T12:00:11.832Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T12:00:12.721Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T12:00:12.721Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T12:00:14.800Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T12:00:14.800Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T12:00:14.800Z"}
@@ -4425,7 +4425,7 @@
 {"NUTS":"DE149","cumulatedInfected":90,"scraper":"sigmaringen","scrapedAt":"2020-03-23T15:00:06.191Z"}
 {"NUTS":"DE144","cumulatedInfected":60,"updateDate":"2020-03-21T17:00:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-23T15:00:08.901Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-23T15:00:10.180Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T15:00:11.051Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T15:00:11.051Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T15:00:11.879Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T15:00:11.879Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T15:00:11.879Z"}
@@ -4558,7 +4558,7 @@
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-23T16:00:04.213Z"}
 {"NUTS":"DE144","cumulatedInfected":60,"updateDate":"2020-03-21T17:00:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-23T16:00:11.165Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-23T16:00:12.407Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T16:00:13.250Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T16:00:13.250Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T16:00:14.103Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T16:00:14.103Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T16:00:14.103Z"}
@@ -4689,7 +4689,7 @@
 {"NUTS":"DE136","cumulatedInfected":67,"scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-03-23T17:00:05.035Z"}
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-23T17:00:06.833Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-23T17:00:09.739Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T17:00:10.571Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T17:00:10.571Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T17:00:11.418Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T17:00:11.418Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T17:00:11.418Z"}
@@ -4822,7 +4822,7 @@
 {"NUTS":"DE136","cumulatedInfected":67,"scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-03-23T20:56:41.629Z"}
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-23T20:56:43.378Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-23T20:56:47.244Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T20:56:48.132Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-23T20:56:48.132Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-23T20:56:48.976Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-23T20:56:48.976Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-23T20:56:48.976Z"}
@@ -4956,7 +4956,7 @@
 {"NUTS":"DE136","cumulatedInfected":67,"scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-03-24T00:56:33.356Z"}
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-24T00:56:35.165Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-24T00:56:38.907Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-24T00:56:39.684Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-24T00:56:39.684Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-24T00:56:40.497Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-24T00:56:40.497Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-24T00:56:40.497Z"}
@@ -5089,7 +5089,7 @@
 {"NUTS":"DE136","cumulatedInfected":67,"scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-03-24T04:56:48.829Z"}
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-24T04:56:51.550Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-24T04:56:54.670Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-24T04:56:55.535Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-24T04:56:55.535Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-24T04:56:56.518Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-24T04:56:56.518Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-24T04:56:56.518Z"}
@@ -5220,7 +5220,7 @@
 {"NUTS":"DE136","cumulatedInfected":67,"scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-03-24T08:56:47.109Z"}
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-24T08:56:49.038Z"}
 {"NUTS":"CH057","cumulatedInfected":81,"updateDate":"2020-03-23","scraper":"thurgau","scrapedAt":"2020-03-24T08:56:54.031Z"}
-{"NUTS":"CH070","cumulatedInfected":165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-24T08:56:54.799Z"}
+{"NUTS":"CH070","cumulatedInfected":1165,"cumulatedDeaths":48,"scraper":"ticino","scrapedAt":"2020-03-24T08:56:54.799Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-24T08:56:55.374Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-24T08:56:55.374Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-24T08:56:55.374Z"}
@@ -5350,7 +5350,7 @@
 {"NUTS":"DE136","cumulatedInfected":67,"scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-03-24T12:56:52.749Z"}
 {"NUTS":"DE149","cumulatedInfected":104,"scraper":"sigmaringen","scrapedAt":"2020-03-24T12:56:54.662Z"}
 {"NUTS":"CH057","cumulatedInfected":87,"updateDate":"2020-03-24","scraper":"thurgau","scrapedAt":"2020-03-24T12:57:21.763Z"}
-{"NUTS":"CH070","cumulatedInfected":211,"cumulatedDeaths":53,"scraper":"ticino","scrapedAt":"2020-03-24T12:57:22.612Z"}
+{"NUTS":"CH070","cumulatedInfected":1211,"cumulatedDeaths":53,"scraper":"ticino","scrapedAt":"2020-03-24T12:57:22.612Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-24T12:57:23.464Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-24T12:57:23.464Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-24T12:57:23.464Z"}
@@ -5482,7 +5482,7 @@
 {"NUTS":"DE149","cumulatedInfected":128,"scraper":"sigmaringen","scrapedAt":"2020-03-24T16:56:43.906Z"}
 {"NUTS":"DE144","cumulatedInfected":78,"updateDate":"2020-03-24T15:50:00.000Z","population":126000,"scraper":"stadtkreis-ulm","scrapedAt":"2020-03-24T16:56:47.887Z"}
 {"NUTS":"CH057","cumulatedInfected":87,"updateDate":"2020-03-24","scraper":"thurgau","scrapedAt":"2020-03-24T16:56:49.164Z"}
-{"NUTS":"CH070","cumulatedInfected":211,"cumulatedDeaths":53,"scraper":"ticino","scrapedAt":"2020-03-24T16:56:50.035Z"}
+{"NUTS":"CH070","cumulatedInfected":1211,"cumulatedDeaths":53,"scraper":"ticino","scrapedAt":"2020-03-24T16:56:50.035Z"}
 {"NUTS":"AT33","cumulatedInfected":775,"cumulatedRecovered":8,"scraper":"tirol","scrapedAt":"2020-03-24T16:56:50.911Z"}
 {"NUTS":"AT332","cumulatedInfected":256,"scraper":"tirol","scrapedAt":"2020-03-24T16:56:50.911Z"}
 {"NUTS":"AT333","cumulatedInfected":38,"scraper":"tirol","scrapedAt":"2020-03-24T16:56:50.911Z"}
@@ -5509,3 +5509,4 @@
 {"NUTS":"DE27C","cumulatedInfected":59,"scraper":"unterallgäu","scrapedAt":"2020-03-24T19:10:31.623Z"}
 {"NUTS":"DE13A","cumulatedInfected":53,"updateDate":"2020-03-23T17:00:00.000Z","scraper":"waldshut","scrapedAt":"2020-03-24T19:14:15.783Z"}
 {"NUTS":"DE143","cumulatedInfected":162,"updateDate":"2020-03-24T16:30:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-24T19:18:52.759Z"}
+{"NUTS":"CH070","cumulatedInfected":1211,"cumulatedDeaths":53,"scraper":"ticino","scrapedAt":"2020-03-24T19:35:27.078Z"}

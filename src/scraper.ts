@@ -19,6 +19,6 @@ export abstract class Scraper {
     }
     
     protected parseNumber(value: string): number {
-        return parseInt(value.replace(/\./g, ''), 10);
+        return parseInt(value.replace(/[.']/g, ''), 10);
     }
 }
