@@ -4,7 +4,7 @@ export abstract class Scraper {
 
     public abstract get(): Promise<Record<string, any> | Record<string, any>[]>;
     
-    protected async downloadAndMatch(url: string, matcher: RegExp): Promise<string[]> {
+    protected async downloadAndMatch(url: string, matcher: RegExp): Promise<string[] & { groups: Record<string, string>}> {
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error('Failed to download: ' + response.statusText);
