@@ -5500,3 +5500,5 @@
 {"NUTS":"AT335","cumulatedInfected":286,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}
 {"NUTS":"DE131","cumulatedInfected":230,"updateDate":"2020-03-24T05:30:00.000Z","scraper":"breisgau-hochschwarzwald","scrapedAt":"2020-03-24T18:29:24.500Z"}
 {"NUTS":"DE132","cumulatedInfected":199,"updateDate":"2020-03-24T05:30:00.000Z","scraper":"breisgau-hochschwarzwald","scrapedAt":"2020-03-24T18:29:24.500Z"}
+{"NUTS":"DE125","cumulatedInfected":111,"updateDate":"2020-03-24","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-24T18:39:27.403Z"}
+{"NUTS":"DE128","cumulatedInfected":330,"updateDate":"2020-03-24","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-24T18:39:27.403Z"}

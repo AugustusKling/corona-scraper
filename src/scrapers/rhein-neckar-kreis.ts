@@ -3,15 +3,25 @@ import * as moment from 'moment-timezone';
 
 class RheinNeckarKreis extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
-            'https://www.rhein-neckar-kreis.de/start/landratsamt/coronavirus+-+faq.html',
-            /Die Zahl der positiv getesteten Personen beträgt nun \d+\. Davon\s+(\d+) im Rhein\-Neckar\-Kreis und\s+\d+ im Stadtgebiet Heidelberg <i\>\(Stand: (.+?)\)/
+        const { groups } = await this.downloadAndMatch(
+            'https://www.rhein-neckar-kreis.de/,Lde/start/landratsamt/coronavirus+-+faq.html',
+            /Die Zahl der positiv getesteten Personen beträgt nun \d+\. Davon\s+(?<rheinNeckar>\d+) im Rhein\-Neckar\-Kreis und\s+(?<heidelberg>\d+) im Stadtgebiet Heidelberg.+?\(Stand: (?<updateDate>.+?)\)/
         );
-        return {
-            NUTS: 'DE128',
-            cumulatedInfected: parseInt(matches[1], 10),
-            updateDate: moment.tz(matches[2], 'DD. MMMM YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD')
-        };
+        const updateDate = moment.tz(groups.updateDate, 'DD. MMM YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD');
+        return [
+            {
+                // Heidelberg
+                NUTS: 'DE125',
+                cumulatedInfected: this.parseNumber(groups.heidelberg),
+                updateDate
+            },
+            {
+                // Rhein-Neckar-Kreis
+                NUTS: 'DE128',
+                cumulatedInfected: this.parseNumber(groups.rheinNeckar),
+                updateDate
+            }
+        ];
     }
 }
 
