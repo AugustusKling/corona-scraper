@@ -1,18 +1,25 @@
 import { Scraper } from '../scraper';
+import * as moment from 'moment-timezone';
 
 class Karlsruhe extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://corona.karlsruhe.de/',
-            /Stadt Karlsruhe: (\d+),[^]*?davon \d+ aus Quarantäne entlassen[^]+?Landkreis Karlsruhe: (\d+),[^]*?davon \d+ aus Quarantäne entlassen/
+            /Stadt Karlsruhe: (?<stadt>\d+)[^]+Landkreis Karlsruhe: (?<landkreis>\d+)[^]+?Zuletzt aktualisiert: (?<updateDate>.+?) Uhr/
         );
+        const updateDate = moment.tz(groups.updateDate, 'DD. MMM, HH:mm', 'de', 'Europe/Berlin').toISOString()
         return [
             {
+                // Stadt Karlsruhe
                 NUTS: 'DE122',
-                cumulatedInfected: parseInt(matches[1], 10)
-            },{
+                cumulatedInfected: this.parseNumber(groups.stadt),
+                updateDate
+            },
+            {
+                // Landkreis Karlsruhe
                 NUTS: 'DE123',
-                cumulatedInfected: parseInt(matches[2], 10)
+                cumulatedInfected: this.parseNumber(groups.landkreis),
+                updateDate
             }
         ];
     }
