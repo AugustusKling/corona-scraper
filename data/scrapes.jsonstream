@@ -5507,3 +5507,4 @@
 {"NUTS":"DE123","cumulatedInfected":203,"updateDate":"2020-03-24T11:30:00.000Z","scraper":"karlsruhe","scrapedAt":"2020-03-24T18:59:09.518Z"}
 {"NUTS":"DE11A","cumulatedInfected":201,"updateDate":"2020-03-24T18:15:00.000Z","scraper":"schwäbisch-hall","scrapedAt":"2020-03-24T19:04:46.391Z"}
 {"NUTS":"DE27C","cumulatedInfected":59,"scraper":"unterallgäu","scrapedAt":"2020-03-24T19:10:31.623Z"}
+{"NUTS":"DE13A","cumulatedInfected":53,"updateDate":"2020-03-23T17:00:00.000Z","scraper":"waldshut","scrapedAt":"2020-03-24T19:14:15.783Z"}

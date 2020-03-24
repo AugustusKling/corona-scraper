@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://www.landkreis-waldshut.de/aktuelles/informationen-zum-neuartigen-coronavirus/',
-            /Zahl der Coronavirusfälle im Landkreis Waldshut auf (\d+) angestiegen \(Stand (.+?) Uhr\)/
+            /(\d+) gemeldete Coronavirusfälle im Landkreis \(Stand \w+, (.+?) Uhr\)/
         );
         return {
             NUTS: 'DE13A',
