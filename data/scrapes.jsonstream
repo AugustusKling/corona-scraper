@@ -5531,3 +5531,5 @@
 {"NUTS":"AT334","cumulatedInfected":311,"scraper":"tirol","scrapedAt":"2020-03-24T16:56:50.911Z"}
 {"NUTS":"AT335","cumulatedInfected":157,"scraper":"tirol","scrapedAt":"2020-03-24T16:56:50.911Z"}
 {"NUTS":"AT34","cumulatedInfected":330,"scraper":"vorarlberg","scrapedAt":"2020-03-24T16:56:53.290Z"}
+{"NUTS":"DE121","cumulatedInfected":36,"updateDate":"2020-03-24T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-24T17:26:17.380Z"}
+{"NUTS":"DE124","cumulatedInfected":158,"updateDate":"2020-03-24T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-24T17:26:17.380Z"}

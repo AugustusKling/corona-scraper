@@ -1,17 +1,28 @@
 import { Scraper } from '../scraper';
+import * as moment from 'moment-timezone';
 
 class Rastatt extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
-            'https://www.baden-baden.de/stadtportrait/aktuelles/themen/coronavirus/',
-            /Im Zust&auml;ndigkeitsbereich des Gesundheitsamtes in Rastatt, zu dem neben Baden-Baden auch der Landkreis Rastatt geh&ouml;rt, sind aktuell insgesamt (\d+) Personen mit dem Corona-Virus infiziert. Davon sind (\d+) F&auml;lle aus Baden-Baden./
+            'https://www.baden-baden.de/stadtportrait/aktuelles/themen/coronavirus/corona-aktuell/',
+            /In Baden-Baden haben sich inzwischen (\d+) Personen mit dem Virus infiziert, im Landkreis Rastatt (\d+) Personen.+?\(Stand (.+?) Uhr\)/
         );
-        const casesRastattAndBadenBaden = parseInt(matches[1], 10);
-        const casesBadenBaden = parseInt(matches[2], 10);
-        return {
-            NUTS: 'DE124',
-            cumulatedInfected: casesRastattAndBadenBaden - casesBadenBaden
-        };
+        
+        const updateDate = moment.tz(matches[3].replace(/&auml;/, 'ä'), 'DD. MMM, HH', 'de', 'Europe/Berlin').toISOString()
+        return [
+            {
+                // Baden-Baden
+                NUTS: 'DE121',
+                cumulatedInfected: parseInt(matches[1], 10),
+                updateDate
+            },
+            {
+                // Rastatt
+                NUTS: 'DE124',
+                cumulatedInfected: parseInt(matches[2], 10),
+                updateDate
+            }
+        ];
     }
 }
 
