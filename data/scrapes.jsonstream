@@ -5492,3 +5492,9 @@
 {"NUTS":"DE121","cumulatedInfected":36,"updateDate":"2020-03-24T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-24T17:26:17.380Z"}
 {"NUTS":"DE124","cumulatedInfected":158,"updateDate":"2020-03-24T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-24T17:26:17.380Z"}
 {"NUTS":"DE147","cumulatedInfected":131,"cumulatedRecovered":11,"currentlyHospitalized":6,"cumulatedQuarantined":500,"scraper":"bodenseekreis","scrapedAt":"2020-03-24T17:35:10.647Z"}
+{"NUTS":"AT33","cumulatedInfected":1183,"cumulatedTested":9123,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}
+{"NUTS":"AT331","cumulatedInfected":18,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}
+{"NUTS":"AT332","cumulatedInfected":393,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}
+{"NUTS":"AT333","cumulatedInfected":52,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}
+{"NUTS":"AT334","cumulatedInfected":432,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}
+{"NUTS":"AT335","cumulatedInfected":286,"scraper":"tirol","scrapedAt":"2020-03-24T18:05:48.424Z"}

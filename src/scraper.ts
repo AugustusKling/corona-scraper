@@ -17,4 +17,8 @@ export abstract class Scraper {
             throw new Error('Failed to extract.');
         }
     }
+    
+    protected parseNumber(value: string): number {
+        return parseInt(value.replace(/\./g, ''), 10);
+    }
 }
