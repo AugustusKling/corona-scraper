@@ -14,7 +14,7 @@ async function scrape() {
     } );
     for(const scraperName of scrapers) {
         const scraper: Scraper = (await import( __dirname + '/scrapers/' + scraperName )).scraper;
-        const scraperId = scraperName.replace(/[.]js$/, '');
+        const scraperId = scraperName.replace(/[.]ts$/, '');
         try {
             const data = await scraper.get();
             const dataPoints = Array.isArray(data) ? data : [data];
