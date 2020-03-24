@@ -5511,3 +5511,4 @@
 {"NUTS":"DE143","cumulatedInfected":162,"updateDate":"2020-03-24T16:30:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-24T19:18:52.759Z"}
 {"NUTS":"CH070","cumulatedInfected":1211,"cumulatedDeaths":53,"scraper":"ticino","scrapedAt":"2020-03-24T19:35:27.078Z"}
 {"NUTS":"DE21M","cumulatedInfected":86,"updateDate":"2020-03-24","scraper":"traunstein","scrapedAt":"2020-03-24T19:52:26.851Z"}
+{"NUTS":"CH040","cumulatedInfected":1211,"updateDate":"2020-03-24T08:30:00.000Z","scraper":"zürich","scrapedAt":"2020-03-24T21:46:37.620Z"}
