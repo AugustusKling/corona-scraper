@@ -29,7 +29,7 @@ class ScraperImpl extends Scraper {
             .filter(record => record.denominazione_regione !== 'Sardegna')
             .map(record => {
                 return {
-                    NUTS: codiceProvincialeToNuts[record.codice_provincia],
+                    NUTS: codiceProvincialeToNuts[record.codice_provincia as keyof typeof codiceProvincialeToNuts],
                     cumulatedInfected: parseInt(record.totale_casi, 10),
                     updateDate: moment.tz(record.data, 'YYYY-MM-DD HH:mm:ss', 'Europe/Rome').toISOString()
                 };

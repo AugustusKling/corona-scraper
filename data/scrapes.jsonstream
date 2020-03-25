@@ -6566,3 +6566,4 @@
 {"NUTS":"DE143","cumulatedInfected":219,"updateDate":"2020-03-25T16:30:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-25T20:57:21.968Z"}
 {"NUTS":"CH066","updateDate":"2020-03-25T07:00:00.000Z","cumulatedInfected":80,"cumulatedRecovered":18,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-25T20:57:23.554Z"}
 {"NUTS":"CH040","cumulatedInfected":1363,"updateDate":"2020-03-25T08:30:00.000Z","scraper":"zürich","scrapedAt":"2020-03-25T20:57:24.450Z"}
+{"updateDate":"2020-03-25T07:00:00.000Z","cumulatedInfected":34,"cumulatedDeaths":2,"NUTS":"CH053","scraper":"appenzell-ausserrhoden","scrapedAt":"2020-03-25T22:34:19.467Z"}
