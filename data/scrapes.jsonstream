@@ -6407,3 +6407,4 @@
 {"NUTS":"CH063","updateDate":"2020-03-25","cumulatedInfected":99,"cumulatedRecovered":10,"scraper":"schwyz","scrapedAt":"2020-03-25T18:04:09.533Z"}
 {"NUTS":"CH051","updateDate":"2020-03-25T12:30:00.000Z","cumulatedInfected":40,"cumulatedHospitalized":2,"scraper":"glarus","scrapedAt":"2020-03-25T18:12:53.461Z"}
 {"NUTS":"CH064","updateDate":"2020-01-25","cumulatedInfected":27,"scraper":"obwalden","scrapedAt":"2020-03-25T18:26:31.915Z"}
+{"NUTS":"CH065","cumulatedInfected":44,"scraper":"nidwalden","scrapedAt":"2020-03-25T18:31:04.761Z"}
