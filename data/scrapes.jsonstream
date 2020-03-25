@@ -6410,3 +6410,4 @@
 {"NUTS":"CH065","cumulatedInfected":44,"scraper":"nidwalden","scrapedAt":"2020-03-25T18:31:04.761Z"}
 {"NUTS":"CH062","updateDate":"2020-03-25","cumulatedInfected":31,"cumulatedHospitalized":3,"cumulatedDeaths":0,"cumulatedRecovered":2,"scraper":"uri","scrapedAt":"2020-03-25T18:42:53.256Z"}
 {"NUTS":"DE148","cumulatedInfected":274,"cumulatedRecoved":30,"scraper":"ravensburg","scrapedAt":"2020-03-25T18:53:01.180Z"}
+{"NUTS":"CH052","cumulatedInfected":34,"updateDate":"2020-03-25T07:00:00.000Z","scraper":"schaffhausen","scrapedAt":"2020-03-25T19:17:58.951Z"}
