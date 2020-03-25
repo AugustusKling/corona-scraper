@@ -2,14 +2,14 @@ import { Scraper } from '../scraper';
 
 class Ravensburg extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
-            'https://www.rv.de/Startseite',
-            /Derzeit gibt es bei uns (\d+) bekannte\s+Coronavirus-Infektionsfälle.<br>\s+Unter diesen bestätigten\s+Fällen sind (\d+) Personen wieder als gesund\s+diagnostiziert./
+        const { groups } = await this.downloadAndMatch(
+            'https://www.rv.de/corona',
+            /Derzeit\s+gibt es bei uns <strong>(?<cumulatedInfected>\d+) bekannte\s+Coronavirus-Infektionsfälle[^]+Unter diesen bestätigten\s+Fällen sind <strong>(?<cumulatedRecoved>\d+) Personen wieder als\s+gesund<\/strong> diagnostiziert/
         );
         return {
             NUTS: 'DE148',
-            cumulatedInfected: parseInt(matches[1], 10),
-            cumulatedRecoved: parseInt(matches[2], 10)
+            cumulatedInfected: this.parseNumber(groups.cumulatedInfected),
+            cumulatedRecoved: this.parseNumber(groups.cumulatedRecoved)
         };
     }
 }
