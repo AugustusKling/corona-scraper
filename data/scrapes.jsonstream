@@ -6402,3 +6402,4 @@
 {"NUTS":"AT34","cumulatedInfected":391,"scraper":"vorarlberg","scrapedAt":"2020-03-25T16:57:33.774Z"}
 {"NUTS":"DE143","cumulatedInfected":219,"updateDate":"2020-03-25T16:30:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-25T16:57:37.350Z"}
 {"NUTS":"CH040","cumulatedInfected":1363,"updateDate":"2020-03-25T08:30:00.000Z","scraper":"zürich","scrapedAt":"2020-03-25T16:57:38.206Z"}
+{"NUTS":"CH061","updateDate":"2020-03-25T10:00:00.000Z","cumulatedInfected":228,"scraper":"luzern","scrapedAt":"2020-03-25T17:40:53.787Z"}
