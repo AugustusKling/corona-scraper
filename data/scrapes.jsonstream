@@ -6405,3 +6405,4 @@
 {"NUTS":"CH061","updateDate":"2020-03-25T10:00:00.000Z","cumulatedInfected":228,"scraper":"luzern","scrapedAt":"2020-03-25T17:40:53.787Z"}
 {"NUTS":"CH066","updateDate":"2020-03-25T07:00:00.000Z","cumulatedInfected":80,"cumulatedRecovered":18,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-25T17:57:15.601Z"}
 {"NUTS":"CH063","updateDate":"2020-03-25","cumulatedInfected":99,"cumulatedRecovered":10,"scraper":"schwyz","scrapedAt":"2020-03-25T18:04:09.533Z"}
+{"NUTS":"CH051","updateDate":"2020-03-25T12:30:00.000Z","cumulatedInfected":40,"cumulatedHospitalized":2,"scraper":"glarus","scrapedAt":"2020-03-25T18:12:53.461Z"}
