@@ -6114,3 +6114,4 @@
 {"NUTS":"CH032","updateDate":"2020-03-24","cumulatedInfected":306,"cumulatedDeaths":4,"scraper":"basel-landschaft","scrapedAt":"2020-03-25T11:47:29.077Z"}
 {"NUTS":"CH031","updateDate":"2020-03-25T10:15:00.000Z","cumulatedInfected":466,"scraper":"basel-stadt","scrapedAt":"2020-03-25T11:56:07.041Z"}
 {"NUTS":"CH023","updateDate":"2020-03-24T23:00:00.000Z","cumulatedInfected":129,"scraper":"solothurn","scrapedAt":"2020-03-25T12:01:56.853Z"}
+{"NUTS":"CH021","updateDate":"2020-03-25","cumulatedInfected":624,"cumulatedDeaths":6,"scraper":"bern","scrapedAt":"2020-03-25T12:27:55.447Z"}
