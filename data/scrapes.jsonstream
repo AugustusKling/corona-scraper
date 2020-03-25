@@ -6112,3 +6112,4 @@
 {"NUTS":"DE143","cumulatedInfected":162,"updateDate":"2020-03-24T16:30:00.000Z","scraper":"zollernalbkreis","scrapedAt":"2020-03-25T08:56:52.374Z"}
 {"NUTS":"CH040","cumulatedInfected":1363,"updateDate":"2020-03-25T08:30:00.000Z","scraper":"zürich","scrapedAt":"2020-03-25T08:56:53.134Z"}
 {"NUTS":"CH032","updateDate":"2020-03-24","cumulatedInfected":306,"cumulatedDeaths":4,"scraper":"basel-landschaft","scrapedAt":"2020-03-25T11:47:29.077Z"}
+{"NUTS":"CH031","updateDate":"2020-03-25T10:15:00.000Z","cumulatedInfected":466,"scraper":"basel-stadt","scrapedAt":"2020-03-25T11:56:07.041Z"}
