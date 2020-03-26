@@ -2,14 +2,22 @@ import { Scraper } from '../scraper';
 
 class Enzkreis extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
-            'https://www.enzkreis.de/Kreis-Verwaltung/Bauen-Naturschutz-Umwelt-Gesundheit-und-Infrastruktur/Gesundheitsamt/Hilfreiche-Information-%C3%BCber-das-Corona-Virus/index.php?La=1&object=tx,2891.1978.1&kat=&kuo=2&sub=0',
-            /Aktuell gibt es in Pforzheim \d+ bestätigte Corona-Fälle, im Enzkreis (\d+)/
+        const { groups } = await this.downloadAndMatch(
+            'https://www.enzkreis.de/Quicknavigation/Start/Gesundheitsamt-informiert-%C3%BCber-das-neue-Coronavirus-SARS-CoV-2-83-best%C3%A4tigte-F%C3%A4lle-in-Pforzheim-und-im-Enzkreis.php?object=tx,2891.6&ModID=7&FID=2891.1978.1',
+            /In Pforzheim gibt es (?<cumulatedInfectedPforzheim>\d+) bestätigte Corona-Fälle, im Enzkreis (?<cumulatedInfectedEnzkreis>\d+)/
         );
-        return {
-            NUTS: 'DE12B',
-            cumulatedInfected: parseInt(matches[1], 10)
-        };
+        return [
+            {
+                // Enzkreis
+                NUTS: 'DE12B',
+                cumulatedInfected: groups.cumulatedInfectedEnzkreis
+            },
+            {
+                // Pforzheim
+                NUTS: 'DE129',
+                cumulatedInfected: groups.cumulatedInfectedPforzheim
+            }
+        ];
     }
 }
 
