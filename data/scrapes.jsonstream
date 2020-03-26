@@ -7341,3 +7341,4 @@
 {"NUTS":"DE125","cumulatedInfected":122,"updateDate":"2020-03-26","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-26T20:47:32.955Z"}
 {"NUTS":"DE128","cumulatedInfected":413,"updateDate":"2020-03-26","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-26T20:47:32.955Z"}
 {"cumulatedInfected":30,"updateDate":"2020-03-26","NUTS":"CH064","scraper":"obwalden","scrapedAt":"2020-03-26T21:03:07.485Z"}
+{"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":70,"NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-03-26T21:08:29.871Z"}
