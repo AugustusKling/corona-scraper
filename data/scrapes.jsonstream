@@ -7340,3 +7340,4 @@
 {"NUTS":"DE124","cumulatedInfected":196,"updateDate":"2020-03-26T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-26T20:34:33.066Z"}
 {"NUTS":"DE125","cumulatedInfected":122,"updateDate":"2020-03-26","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-26T20:47:32.955Z"}
 {"NUTS":"DE128","cumulatedInfected":413,"updateDate":"2020-03-26","scraper":"rhein-neckar-kreis","scrapedAt":"2020-03-26T20:47:32.955Z"}
+{"cumulatedInfected":30,"updateDate":"2020-03-26","NUTS":"CH064","scraper":"obwalden","scrapedAt":"2020-03-26T21:03:07.485Z"}
