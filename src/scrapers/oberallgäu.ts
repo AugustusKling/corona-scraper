@@ -1,18 +1,27 @@
-import { Scraper } from '../scraper';
+import { Scraper, parseNumber } from '../scraper';
 import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.oberallgaeu.org/de/news/detail/corona:-newsticker-oberallgaeu.html',
-            /\+\+(.+?)\+\+\s*(\d+)\s*Fälle\s+von Corona-Virus-Infektionen einschl.+(\d+)|\s*Todes/
+            /\+\+(?<updateDate>\d\d\.\d\d\.\d\d\d\d)\+\+\s*Aktuell insgesamt \d+\s*bestätigte Fälle für OA\/KE\s*\((?<oa>\d+)\s*OA\s*\/\s*(?<ke>\d+)\s*KE\)/
         );
-        return {
-            NUTS: 'DE27E',
-            updateDate: moment.tz(matches[1], 'DD.MM.YYYY', 'Europe/Berlin').format('YYYY-MM-DD'),
-            cumulatedInfected: parseInt(matches[2], 10),
-            cumulatedDeaths: parseInt(matches[3], 10)
-        };
+        const updateDate = moment.tz(groups.updateDate, 'DD.MM.YYYY', 'Europe/Berlin').format('YYYY-MM-DD');
+        return [
+            {
+                // Kempten
+                NUTS: 'DE273',
+                updateDate,
+                cumulatedInfected: parseNumber(groups.ke)
+            },
+            {
+                // Oberallgäu
+                NUTS: 'DE27E',
+                updateDate,
+                cumulatedInfected: parseNumber(groups.oa)
+            },
+        ];
     }
 }
 
