@@ -7497,3 +7497,4 @@
 {"NUTS":"AT34","cumulatedInfected":445,"scraper":"vorarlberg","scrapedAt":"2020-03-26T20:57:06.021Z"}
 {"NUTS":"CH066","updateDate":"2020-03-26T07:00:00.000Z","cumulatedInfected":87,"cumulatedRecovered":15,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-26T20:57:11.026Z"}
 {"cumulatedInfected":429,"updateDate":"2020-03-26T10:50:00.000Z","NUTS":"DE21H","scraper":"landkreis-münchen","scrapedAt":"2020-03-26T21:47:02.895Z"}
+{"updateDate":"2020-03-26T12:30:00.000Z","cumulatedInfected":1687,"NUTS":"DE212","scraper":"stadt-münchen","scrapedAt":"2020-03-26T21:57:37.695Z"}
