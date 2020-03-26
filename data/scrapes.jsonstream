@@ -7333,3 +7333,4 @@
 {"NUTS":"CH012","cumulatedInfected":715,"cumulatedDeaths":15,"updateDate":"2020-03-26","scraper":"valais","scrapedAt":"2020-03-26T16:57:21.921Z"}
 {"NUTS":"AT34","cumulatedInfected":445,"scraper":"vorarlberg","scrapedAt":"2020-03-26T16:57:23.310Z"}
 {"NUTS":"CH066","updateDate":"2020-03-26T07:00:00.000Z","cumulatedInfected":87,"cumulatedRecovered":15,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-26T16:57:28.580Z"}
+{"updateDate":"2020-03-26T16:00:00.000Z","cumulatedInfected":187,"NUTS":"DE146","scraper":"biberach","scrapedAt":"2020-03-26T20:04:16.445Z"}

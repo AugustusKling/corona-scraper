@@ -3,14 +3,14 @@ import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.biberach.de/index.php?id=40',
-            /Was gibt es Neues\? \(Stand (.+) Uhr\)[^]+?(\d+)\s+bestätigte Fälle im Landkreis Biberach/
+            /Im Landkreis Biberach gibt es \(Stand: (?<updateDate>.+?) Uhr\) insgesamt (?<cumulatedInfected>\d+) bestätigte Infektionen/
         );
         return {
+            ...groups,
             NUTS: 'DE146',
-            cumulatedInfected: parseInt(matches[2], 10),
-            updateDate: moment.tz(matches[1], 'DD. MMM YYYY, HH.mm', 'de', 'Europe/Berlin').toISOString()
+            updateDate: moment.tz(groups.updateDate, 'DD. MMM, HH', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }
