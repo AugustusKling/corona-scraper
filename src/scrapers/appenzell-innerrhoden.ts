@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.ai.ch/themen/gesundheit-alter-und-soziales/gesundheitsfoerderung-und-praevention/uebertragbare-krankheiten/coronavirus',
-            /Bestätigte Fälle[^]+Stand (?<updateDate>.+?) Uhr[^]+?<li>(?<cumulatedInfected>\d+) infizierte Personen/
+            /Anzahl Fälle[^]+?Stand (?<updateDate>.{10,40}?) Uhr[^]+?<li>(?<cumulatedInfected>\d+) laborbestätigte Fälle/
         );
         return {
             NUTS: 'CH054',

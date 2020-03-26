@@ -7346,3 +7346,4 @@
 {"NUTS":"DE12B","cumulatedInfected":58,"scraper":"enzkreis","scrapedAt":"2020-03-26T21:20:46.469Z"}
 {"NUTS":"DE129","cumulatedInfected":25,"scraper":"enzkreis","scrapedAt":"2020-03-26T21:20:46.469Z"}
 {"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":42,"cumulatedDeaths":2,"NUTS":"CH053","scraper":"appenzell-ausserrhoden","scrapedAt":"2020-03-26T21:23:09.790Z"}
+{"NUTS":"CH054","cumulatedInfected":11,"updateDate":"2020-03-26T17:00:00.000Z","scraper":"appenzell-innerrhoden","scrapedAt":"2020-03-26T21:27:02.649Z"}
