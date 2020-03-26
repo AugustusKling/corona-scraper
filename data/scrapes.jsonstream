@@ -7336,3 +7336,5 @@
 {"updateDate":"2020-03-26T16:00:00.000Z","cumulatedInfected":187,"NUTS":"DE146","scraper":"biberach","scrapedAt":"2020-03-26T20:04:16.445Z"}
 {"NUTS":"DE273","updateDate":"2020-03-26","cumulatedInfected":30,"scraper":"oberallgäu","scrapedAt":"2020-03-26T20:19:14.667Z"}
 {"NUTS":"DE27E","updateDate":"2020-03-26","cumulatedInfected":70,"scraper":"oberallgäu","scrapedAt":"2020-03-26T20:19:14.667Z"}
+{"NUTS":"DE121","cumulatedInfected":39,"updateDate":"2020-03-26T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-26T20:34:33.066Z"}
+{"NUTS":"DE124","cumulatedInfected":196,"updateDate":"2020-03-26T11:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-26T20:34:33.066Z"}
