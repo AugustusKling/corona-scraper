@@ -7498,3 +7498,4 @@
 {"NUTS":"CH066","updateDate":"2020-03-26T07:00:00.000Z","cumulatedInfected":87,"cumulatedRecovered":15,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-26T20:57:11.026Z"}
 {"cumulatedInfected":429,"updateDate":"2020-03-26T10:50:00.000Z","NUTS":"DE21H","scraper":"landkreis-münchen","scrapedAt":"2020-03-26T21:47:02.895Z"}
 {"updateDate":"2020-03-26T12:30:00.000Z","cumulatedInfected":1687,"NUTS":"DE212","scraper":"stadt-münchen","scrapedAt":"2020-03-26T21:57:37.695Z"}
+{"updateDate":"2020-03-26","cumulatedInfected":120,"NUTS":"DE216","scraper":"tölz","scrapedAt":"2020-03-26T22:16:18.032Z"}
