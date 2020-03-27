@@ -7972,3 +7972,4 @@
 {"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":70,"NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-03-27T08:57:53.286Z"}
 {"NUTS":"CH066","updateDate":"2020-03-27T07:00:00.000Z","cumulatedInfected":94,"cumulatedRecovered":18,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-27T08:57:57.046Z"}
 {"updateDate":"2020-03-26T15:45:00.000Z","cumulatedInfected":163,"cumulatedDeaths":3,"NUTS":"DE139","scraper":"lörrach","scrapedAt":"2020-03-27T11:34:28.303Z"}
+{"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":48,"cumulatedDeaths":0,"NUTS":"CH065","scraper":"nidwalden","scrapedAt":"2020-03-27T11:40:27.726Z"}
