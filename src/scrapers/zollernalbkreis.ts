@@ -3,14 +3,14 @@ import * as moment from 'moment-timezone';
 
 class Zollernalbkreis extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.zollernalbkreis.de/aktuelles/nachrichten/antworten+auf+haeufig+gestellte+fragen+zum+neuartigen+coronavirus',
-            /Gesamtzahl der an dem Coronavirus-Infizierten im Zollernalbkreis: (?:<strong>)?(\d+).*\(Stand: (.+) Uhr\)/
+            /Gesamtzahlen Zollernalbkreis \(Stand: (?<updateDate>[^)]+?) Uhr\):<br>Zahl der Coronavirus-Infizierten: <strong>(?<cumulatedInfected>\d+)<\/strong><br>Todesfälle in Zusammenhang mit COVID-19: <strong>(?<cumulatedDeaths>\d+)<\/strong><br>Bereits Genesene: <strong>(?<cumulatedRecovered>\d+)<\/strong>/
         );
         return {
+            ...groups,
             NUTS: 'DE143',
-            cumulatedInfected: parseInt(matches[1], 10),
-            updateDate: moment.tz(matches[2], 'D.M.YYYY, H.m', 'Europe/Berlin').toISOString()
+            updateDate: moment.tz(groups.updateDate, 'D.M.YYYY, H:m', 'Europe/Berlin').toISOString()
         };
     }
 }
