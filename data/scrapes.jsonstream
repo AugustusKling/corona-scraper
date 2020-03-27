@@ -8488,4 +8488,5 @@
 {"updateDate":"2020-03-27T11:30:00.000Z","cumulatedInfected":271,"cumulatedDeaths":4,"cumulatedRecovered":21,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-03-27T20:57:43.848Z"}
 {"NUTS":"CH066","updateDate":"2020-03-27T17:00:00.000Z","cumulatedInfected":101,"cumulatedRecovered":18,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-27T20:57:44.549Z"}
 {"updateDate":"2020-03-27T08:30:00.000Z","cumulatedInfected":1578,"currentlyHospitalized":156,"cumulatedDeaths":11,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-27T20:57:45.305Z"}
-{"updateDate":"2020-03-27","cumulatedInfected":152,"NUTS":"DE276","scraper":"augsburg","scrapedAt":"2020-03-27T21:06:21.005Z"}
+{"updateDate":"2020-03-27","cumulatedInfected":152,"NUTS":"DE276","scraper":"augsburg-landkreis","scrapedAt":"2020-03-27T21:06:21.005Z"}
+{"cumulatedInfected":130,"updateDate":"2020-03-27T08:15:00.000Z","cumulatedRecovered":11,"NUTS":"DE271","scraper":"augsburg-stadt","scrapedAt":"2020-03-27T21:25:39.778Z"}
