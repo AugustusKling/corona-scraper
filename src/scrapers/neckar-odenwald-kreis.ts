@@ -1,14 +1,16 @@
 import { Scraper } from '../scraper';
+import * as moment from 'moment-timezone';
 
 class NeckarOdenwaldKreis extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.neckar-odenwald-kreis.de/Aktuelle+Themen/Neuigkeiten/Informationen+zu+dem+neuartigen+Coronavirus+(SARS_CoV_2)-p-5726.html',
-            /Insgesamt gibt es nun (\d+) bestätigte Fälle im Kreis./
+            /\+\+\+ Update vom (?<updateDate>.{5,20}(?:<\/strong><strong>)? \| \d{1,2}\.\d\d) Uhr \+\+\+[^+]+?Insgesamt gibt es(?: nun)? (?<cumulatedInfected>\d+) bestätigte Fälle im Kreis\./
         );
         return {
+            ...groups,
             NUTS: 'DE127',
-            cumulatedInfected: parseInt(matches[1], 10)
+            updateDate: moment.tz(groups.updateDate.replace(/<\/strong><strong>/, ''), 'DD. MMM YYYY [ | ] H.mm', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }
