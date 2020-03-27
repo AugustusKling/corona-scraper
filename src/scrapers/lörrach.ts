@@ -3,14 +3,14 @@ import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche/Gesundheit/Sachgebiete/Sachgebiet/Corona?skipEntranceUrl',
-            /Aktuelle Situation im Landkreis Lörrach \(Stand (.+?) Uhr\)[^]+Aktuell bestätigte COVID19-Fälle: (\d+)/
+            /Aktuelle Situation im Landkreis Lörrach \(Stand (?<updateDate>.{5,40}?) Uhr\)[^]+Aktuell bestätigte COVID19-Fälle: (?<cumulatedInfected>\d+)[^]+Verstorbene Menschen mit COVID-19-Infektion: (?<cumulatedDeaths>\d+)/
         );
         return {
+            ...groups,
             NUTS: 'DE139',
-            cumulatedInfected: parseInt(matches[2], 10),
-            updateDate: moment.tz(matches[1], 'DD. MMM YYYY, HH:mm', 'de', 'Europe/Berlin').toISOString()
+            updateDate: moment.tz(groups.updateDate, 'DD. MMM YYYY, HH:mm', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }
