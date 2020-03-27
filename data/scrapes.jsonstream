@@ -8317,3 +8317,4 @@
 {"updateDate":"2020-03-27","cumulatedInfected":97,"NUTS":"DE11B","scraper":"main-tauber-kreis","scrapedAt":"2020-03-27T18:16:19.135Z"}
 {"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":63,"NUTS":"DE127","scraper":"neckar-odenwald-kreis","scrapedAt":"2020-03-27T18:30:36.285Z"}
 {"cumulatedInfected":214,"NUTS":"DE134","scraper":"ortenaukreis","scrapedAt":"2020-03-27T18:36:49.740Z"}
+{"cumulatedInfected":1688,"cumulatedDeaths":76,"updateDate":"2020-03-27T07:00:00.000Z","NUTS":"CH070","scraper":"ticino","scrapedAt":"2020-03-27T18:55:34.991Z"}
