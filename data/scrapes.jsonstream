@@ -7974,3 +7974,4 @@
 {"updateDate":"2020-03-26T15:45:00.000Z","cumulatedInfected":163,"cumulatedDeaths":3,"NUTS":"DE139","scraper":"lörrach","scrapedAt":"2020-03-27T11:34:28.303Z"}
 {"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":48,"cumulatedDeaths":0,"NUTS":"CH065","scraper":"nidwalden","scrapedAt":"2020-03-27T11:40:27.726Z"}
 {"NUTS":"CH052","cumulatedInfected":36,"updateDate":"2020-03-27T06:30:00.000Z","scraper":"schaffhausen","scrapedAt":"2020-03-27T11:44:58.884Z"}
+{"updateDate":"2020-03-26","cumulatedInfected":99,"currentlyHospitalized":"16","currentlyIntensiveCare":"4","NUTS":"CH025","scraper":"jura","scrapedAt":"2020-03-27T12:08:11.382Z"}
