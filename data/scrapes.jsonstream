@@ -8140,3 +8140,9 @@
 {"NUTS":"AT34","cumulatedInfected":445,"scraper":"vorarlberg","scrapedAt":"2020-03-27T12:57:55.028Z"}
 {"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":70,"NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-03-27T12:57:58.936Z"}
 {"NUTS":"CH066","updateDate":"2020-03-27T07:00:00.000Z","cumulatedInfected":94,"cumulatedRecovered":18,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-27T12:58:02.105Z"}
+{"NUTS":"AT33","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":1689,"cumulatedRecovered":143,"cumulatedDeaths":6,"cumulatedTested":10861,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
+{"NUTS":"AT331","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":26,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
+{"NUTS":"AT332","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":501,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
+{"NUTS":"AT333","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":62,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
+{"NUTS":"AT334","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":631,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
+{"NUTS":"AT335","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":469,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}

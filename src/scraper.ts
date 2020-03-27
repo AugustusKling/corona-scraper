@@ -35,6 +35,7 @@ export interface RawScrape {
     cumulatedDeaths?: string | number;
     cumulatedHospitalized?: string | number;
     cumulatedRecovered?: string | number;
+    cumulatedTested?: string | number;
 }
 
 export function parseNumber(value: string | number): number {

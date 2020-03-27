@@ -11,6 +11,7 @@ interface Scrape {
     cumulatedDeaths?: number;
     cumulatedHospitalized?: number;
     cumulatedRecovered?: number;
+    cumulatedTested?: number;
 }
 
 function convertTypes(data: RawScrape | RawScrape[]): Scrape[] {
@@ -32,6 +33,9 @@ function convertTypes(data: RawScrape | RawScrape[]): Scrape[] {
         }
         if (dataPoint.cumulatedRecovered) {
             dataPoint.cumulatedRecovered = parseNumber(dataPoint.cumulatedRecovered);
+        }
+        if (dataPoint.cumulatedTested) {
+            dataPoint.cumulatedTested = parseNumber(dataPoint.cumulatedTested);
         }
         converted.push(dataPoint as Scrape);
     }

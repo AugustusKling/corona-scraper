@@ -1,45 +1,53 @@
-import { Scraper } from '../scraper';
+import { Scraper, parseNumber } from '../scraper';
 import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.tirol.gv.at/gesundheit-vorsorge/infekt/coronavirus-covid-19-informationen/',
-            /Aktuelle Zahlen \(Stand: (.+?) Uhr\)[^]*In Tirol gibt es derzeit (.+?) positive Coronavirus-Testergebnisse[^]*>((?:\d|\.)+) Tests wurden in Tirol durchgeführt[^]*Innsbruck:\s*(\d+)[^]*Innsbruck-Land:\s*(\d+)[^]*Landeck:\s*(\d+)[^]*Imst:\s*(\d+)[^]*Lienz:\s*(\d+)[^]*Kufstein:\s*(\d+)[^]*Schwaz:\s*(\d+)[^]*Kitzbühel:\s*(\d+)[^]*Reutte:\s*(\d+)/
+            /<h3>Aktuelle Zahlen \(Stand: \w+, (?<updateDate>[^<]+) Uhr\)<\/h3>\s*<p>Positive Coronavirus-Testergebnisse: (?<cumulatedInfectedTirol>(?:\d|\.)+)\s*<\/p>\s*<p>Davon wieder genesen: (?<cumulatedRecoveredTirol>(?:\d|\.)+)\s*<\/p>\s*<p>Zahl der verstorbenen Personen: (?<cumulatedDeathsTirol>(?:\d|\.)+)\s*<\/p>\s*<p>Zahl der bisher in Tirol durchgeführten Testungen: (?:\d|\.)+\s*<\/p>\s*<p>Zahl der durchgeführten Testungen, für die ein Ergebnis vorliegt: (?<cumulatedTestedTirol>(?:\d|\.)+)\s*<\/p>\s*<p>Zahl der noch in Auswertung befindlichen Testungen: (?:\d|\.)+\s*<\/p>\s*<p>Die Bezirkszahlen der positiven Testungen im Überblick:\s*<\/p><ul><li>Innsbruck: (?<cumulatedInfectedInsbruck>(?:\d|\.)+)<\/li><li>Innsbruck-Land: (?<cumulatedInfectedInsbruckLand>(?:\d|\.)+)<\/li><li>Landeck: (?<cumulatedInfectedLandeck>(?:\d|\.)+)<\/li><li>Imst: (?<cumulatedInfectedImst>(?:\d|\.)+)<\/li><li>Lienz: (?<cumulatedInfectedLienz>(?:\d|\.)+)<\/li><li>\s*Kufstein: (?<cumulatedInfectedKufstein>(?:\d|\.)+)<\/li><li>Schwaz: (?<cumulatedInfectedSchwaz>(?:\d|\.)+)<\/li><li>Kitzbühel: (?<cumulatedInfectedKitzbühel>(?:\d|\.)+)<\/li><li>Reutte: (?<cumulatedInfectedReutte>(?:\d|\.)+)\s*<\/li><\/ul>/
         );
         
-        const updateDate = moment.tz(matches[1], 'DD. MMM YYYY, HH.mm', 'de', 'Europe/Berlin').toISOString()
+        const updateDate = moment.tz(groups.updateDate, 'DD. MMM YYYY, HH.mm', 'de', 'Europe/Berlin').toISOString()
         return [
             // Tyrol aggregate.
             {
                 NUTS: 'AT33',
-                cumulatedInfected: this.parseNumber(matches[2]),
-                cumulatedTested: this.parseNumber(matches[3]),
+                updateDate,
+                cumulatedInfected: groups.cumulatedInfectedTirol,
+                cumulatedRecovered: groups.cumulatedRecoveredTirol,
+                cumulatedDeaths: groups.cumulatedDeathsTirol,
+                cumulatedTested: groups.cumulatedTestedTirol
             },
             // Außerfern / Reutte.
             {
                 NUTS: 'AT331',
-                cumulatedInfected: this.parseNumber(matches[12])
+                updateDate,
+                cumulatedInfected: groups.cumulatedInfectedReutte
             },
             // Innsbruck + Innsbruck-Land.
             {
                 NUTS: 'AT332',
-                cumulatedInfected: this.parseNumber(matches[4]) + this.parseNumber(matches[5])
+                updateDate,
+                cumulatedInfected: parseNumber(groups.cumulatedInfectedInsbruck) + parseNumber(groups.cumulatedInfectedInsbruckLand)
             },
             // Osttirol.
             {
                 NUTS: 'AT333',
-                cumulatedInfected: this.parseNumber(matches[8])
+                updateDate,
+                cumulatedInfected: groups.cumulatedInfectedLienz
             },
             // Tiroler Oberland.
             {
                 NUTS: 'AT334',
-                cumulatedInfected: this.parseNumber(matches[6]) + this.parseNumber(matches[7])
+                updateDate,
+                cumulatedInfected: parseNumber(groups.cumulatedInfectedLandeck) + parseNumber(groups.cumulatedInfectedImst)
             },
             // Tiroler Unterland.
             {
                 NUTS: 'AT335',
-                cumulatedInfected: this.parseNumber(matches[9]) + this.parseNumber(matches[10]) + this.parseNumber(matches[11])
+                updateDate,
+                cumulatedInfected: parseNumber(groups.cumulatedInfectedKufstein) + parseNumber(groups.cumulatedInfectedSchwaz) + parseNumber(groups.cumulatedInfectedKitzbühel)
             }
         ];
     }
