@@ -32,10 +32,6 @@ export interface RawScrape {
     NUTS: string;
     updateDate?: Moment | string;
     cumulatedInfected?: string | number;
-    cumulatedDeaths?: string | number;
-    cumulatedHospitalized?: string | number;
-    cumulatedRecovered?: string | number;
-    cumulatedTested?: string | number;
 }
 
 export function parseNumber(value: string | number): number {

@@ -5,11 +5,11 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://gd.zh.ch/internet/gesundheitsdirektion/de/themen/coronavirus.html',
-            /Aktuelle Situation im Kanton Zürich \((?<updateDate>.+?) Uhr\)[^]+?Im Kanton Zürich sind zurzeit (?<cumulatedInfected>\d+) Personen positiv auf das Coronavirus getestet worden. Total (?<cumulatedDeaths>\d+) Todesfälle/
+            /<h2>Aktuelle Situation im Kanton Zürich \((?<updateDate>.+?) Uhr\)<\/h2>\s*<p>Im Kanton Zürich sind zurzeit (?<cumulatedInfected>\d+) Personen positiv auf das Coronavirus getestet worden\.<\/p>\s*<p>(?<currentlyHospitalized>\d+) positiv Getestete befinden sich in Spitalbehandlung, davon werden \d+ künstlich beatmet.<\/p>\s*<p>Total (?<cumulatedDeaths>\d+) Todesfälle/
         );
         return {
+            ...groups,
             NUTS: 'CH040',
-            cumulatedInfected: this.parseNumber(groups.cumulatedInfected),
             updateDate: moment.tz(groups.updateDate, 'D.M.YYYY, H.mm', 'de', 'Europe/Berlin').toISOString()
         };
     }

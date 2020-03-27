@@ -24,18 +24,10 @@ function convertTypes(data: RawScrape | RawScrape[]): Scrape[] {
         if (dataPoint.cumulatedInfected === undefined) {
             throw new Error('Must give cumulatedInfected');
         }
-        dataPoint.cumulatedInfected = parseNumber(dataPoint.cumulatedInfected);
-        if (dataPoint.cumulatedDeaths) {
-            dataPoint.cumulatedDeaths = parseNumber(dataPoint.cumulatedDeaths);
-        }
-        if (dataPoint.cumulatedHospitalized) {
-            dataPoint.cumulatedHospitalized = parseNumber(dataPoint.cumulatedHospitalized);
-        }
-        if (dataPoint.cumulatedRecovered) {
-            dataPoint.cumulatedRecovered = parseNumber(dataPoint.cumulatedRecovered);
-        }
-        if (dataPoint.cumulatedTested) {
-            dataPoint.cumulatedTested = parseNumber(dataPoint.cumulatedTested);
+        for(const [key, value] of Object.entries(dataPoint)) {
+            if (!['NUTS', 'updateDate'].includes(key)) {
+                (dataPoint as any)[key] = parseNumber(value);
+            }
         }
         converted.push(dataPoint as Scrape);
     }

@@ -8320,3 +8320,4 @@
 {"cumulatedInfected":1688,"cumulatedDeaths":76,"updateDate":"2020-03-27T07:00:00.000Z","NUTS":"CH070","scraper":"ticino","scrapedAt":"2020-03-27T18:55:34.991Z"}
 {"cumulatedInfected":99,"updateDate":"2020-03-27","NUTS":"DE27C","scraper":"unterallgäu","scrapedAt":"2020-03-27T19:01:27.495Z"}
 {"updateDate":"2020-03-27T11:30:00.000Z","cumulatedInfected":271,"cumulatedDeaths":4,"cumulatedRecovered":21,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-03-27T19:07:46.451Z"}
+{"updateDate":"2020-03-27T08:30:00.000Z","cumulatedInfected":1578,"currentlyHospitalized":156,"cumulatedDeaths":11,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-27T19:45:15.527Z"}
