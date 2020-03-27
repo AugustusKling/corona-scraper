@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Departement-des-Innern/Gesundheitsamt-3209198-DE.html',
-            /Im Kanton Schaffhausen gibt es aktuell \(Stand (.+?) Uhr\) (\d+) bestätige Coronavirus-Fälle/
+            /Im Kanton Schaffhausen gibt es aktuell \(Stand (.{0,40}?) Uhr\) (\d+) bestätige Coronavirus-Fälle/
         );
         return {
             NUTS: 'CH052',
