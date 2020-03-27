@@ -8314,3 +8314,4 @@
 {"NUTS":"AT34","cumulatedInfected":445,"scraper":"vorarlberg","scrapedAt":"2020-03-27T16:58:01.737Z"}
 {"updateDate":"2020-03-26T15:00:00.000Z","cumulatedInfected":70,"NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-03-27T16:58:11.194Z"}
 {"NUTS":"CH066","updateDate":"2020-03-27T07:00:00.000Z","cumulatedInfected":94,"cumulatedRecovered":18,"cumulatedDeaths":0,"scraper":"zug","scrapedAt":"2020-03-27T16:58:13.271Z"}
+{"updateDate":"2020-03-27","cumulatedInfected":97,"NUTS":"DE11B","scraper":"main-tauber-kreis","scrapedAt":"2020-03-27T18:16:19.135Z"}
