@@ -8146,3 +8146,4 @@
 {"NUTS":"AT333","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":62,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
 {"NUTS":"AT334","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":631,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
 {"NUTS":"AT335","updateDate":"2020-03-27T07:30:00.000Z","cumulatedInfected":469,"scraper":"tirol","scrapedAt":"2020-03-27T13:22:45.178Z"}
+{"updateDate":"2020-03-27T06:00:00.000Z","cumulatedInfected":83,"NUTS":"DE214","scraper":"altötting","scrapedAt":"2020-03-27T14:03:00.370Z"}
