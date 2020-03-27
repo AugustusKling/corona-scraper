@@ -7976,3 +7976,4 @@
 {"NUTS":"CH052","cumulatedInfected":36,"updateDate":"2020-03-27T06:30:00.000Z","scraper":"schaffhausen","scrapedAt":"2020-03-27T11:44:58.884Z"}
 {"updateDate":"2020-03-26","cumulatedInfected":99,"currentlyHospitalized":"16","currentlyIntensiveCare":"4","NUTS":"CH025","scraper":"jura","scrapedAt":"2020-03-27T12:08:11.382Z"}
 {"updateDate":"2020-03-26T13:30:00.000Z","cumulatedInfected":271,"cumulatedDeaths":5,"NUTS":"CH024","scraper":"neuchâtel","scrapedAt":"2020-03-27T12:32:53.935Z"}
+{"updateDate":"2020-03-26","currentlyHospitalized":"44","cumulatedDeaths":11,"cumulatedInfected":309,"NUTS":"CH022","scraper":"fribourg","scrapedAt":"2020-03-27T12:35:04.444Z"}
