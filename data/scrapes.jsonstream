@@ -9335,3 +9335,4 @@
 {"updateDate":"2020-03-28T13:00:00.000Z","cumulatedInfected":1720,"currentlyHospitalized":187,"cumulatedDeaths":15,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-28T16:57:51.769Z"}
 {"NUTS":"DE216","updateDate":"2020-03-27","cumulatedInfected":135,"scraper":"tölz","scrapedAt":"2020-03-28T18:31:42.147Z"}
 {"NUTS":"DE216","updateDate":"2020-03-28","cumulatedInfected":140,"scraper":"tölz","scrapedAt":"2020-03-28T18:33:23.476Z"}
+{"NUTS":"DE146","updateDate":"2020-03-28T16:00:00.000Z","cumulatedInfected":212,"scraper":"biberach","scrapedAt":"2020-03-28T18:37:51.085Z"}
