@@ -26,7 +26,11 @@ function convertTypes(data: RawScrape | RawScrape[]): Scrape[] {
         }
         for(const [key, value] of Object.entries(dataPoint)) {
             if (!['NUTS', 'updateDate'].includes(key)) {
-                (dataPoint as any)[key] = parseNumber(value);
+                if (value === undefined) {
+                    delete (dataPoint as any)[key];
+                } else {
+                    (dataPoint as any)[key] = parseNumber(value);
+                }
             }
         }
         converted.push(dataPoint as Scrape);

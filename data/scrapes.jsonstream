@@ -8995,3 +8995,4 @@
 {"NUTS":"CH066","updateDate":"2020-03-27T17:00:00.000Z","cumulatedInfected":101,"cumulatedRecovered":18,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-28T08:57:40.544Z"}
 {"updateDate":"2020-03-27T08:30:00.000Z","cumulatedInfected":1578,"currentlyHospitalized":156,"cumulatedDeaths":11,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-28T08:57:41.312Z"}
 {"updateDate":"2020-03-27","currentlyHospitalized":50,"cumulatedDeaths":15,"cumulatedInfected":369,"NUTS":"CH022","scraper":"fribourg","scrapedAt":"2020-03-28T10:11:39.583Z"}
+{"updateDate":"2020-03-26","cumulatedInfected":99,"currentlyHospitalized":16,"currentlyIntensiveCare":4,"NUTS":"CH025","scraper":"jura","scrapedAt":"2020-03-28T10:18:38.063Z"}
