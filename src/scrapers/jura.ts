@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.jura.ch/fr/Autorites/Coronavirus/Chiffres-H-JU/Evolution-des-cas-COVID-19-dans-le-Jura.html',
-            /.+<tr>\s*<td><strong>(?<updateDate>\d{1,2} \w+ \d\d\d\d)<\/strong><\/td>\s*<td>(?<cumulatedInfected>\d+)<\/td>\s*<td>(?<currentlyHospitalized>\d+)<\/td>\s*<td>(?<currentlyIntensiveCare>\d+)<\/td>(?:\s*<td>(?<cumulatedDeaths>\d+)<\/td>)?/
+            /[^]+<tr>\s*<(?:td|th)[^>]*>(?:<strong>)?(?<updateDate>\d{1,2} \w+ \d\d\d\d)(?:<\/strong>)?<\/(?:td|th)>\s*<td>(?<cumulatedInfected>\d+)<\/td>\s*<td>(?<currentlyHospitalized>\d+)<\/td>\s*<td>(?<currentlyIntensiveCare>\d+)<\/td>(?:\s*<td>(?<cumulatedDeaths>\d+)<\/td>)?/
         );
         return {
             ...groups,
