@@ -9338,3 +9338,4 @@
 {"NUTS":"DE146","updateDate":"2020-03-28T16:00:00.000Z","cumulatedInfected":212,"scraper":"biberach","scrapedAt":"2020-03-28T18:37:51.085Z"}
 {"updateDate":"2020-03-28","cumulatedInfected":118,"currentlyHospitalized":23,"currentlyIntensiveCare":5,"NUTS":"CH025","scraper":"jura","scrapedAt":"2020-03-28T18:47:23.156Z"}
 {"updateDate":"2020-03-28T12:30:00.000Z","cumulatedInfected":2080,"NUTS":"DE212","scraper":"stadt-münchen","scrapedAt":"2020-03-28T18:53:25.332Z"}
+{"updateDate":"2020-03-28","cumulatedInfected":122,"cumulatedDeaths":2,"cumulatedRecovered":33,"NUTS":"CH063","scraper":"schwyz","scrapedAt":"2020-03-28T18:58:32.427Z"}
