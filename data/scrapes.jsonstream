@@ -3675,3 +3675,4 @@
 {"updateDate":"2020-03-28","cumulatedInfected":106,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-03-28T19:28:26.728Z"}
 {"updateDate":"2020-03-26","cumulatedInfected":226,"cumulatedRecovered":23,"currentlyQuarantained":549,"NUTS":"DE217","scraper":"dachau","scrapedAt":"2020-03-28T19:38:37.842Z"}
 {"cumulatedDeaths":1,"currentlyHospitalized":8,"cumulatedInfected":192,"cumulatedRecovered":65,"currentlyQuarantined":390,"cumulatedReleasedFromQuarantine":574,"NUTS":"DE147","cumulatedQuarantined":964,"scraper":"bodenseekreis","scrapedAt":"2020-03-28T20:44:17.705Z"}
+{"updateDate":"2020-03-28","cumulatedInfected":149,"NUTS":"DE12C","scraper":"freudenstadt","scrapedAt":"2020-03-28T20:49:56.907Z"}

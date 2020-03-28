@@ -1,14 +1,16 @@
 import { Scraper } from '../scraper';
+import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
-            'https://www.landkreis-freudenstadt.de/Startseite/Aktuell/aktueller+stand+corona-virus.html',
-            /Zahl der Infizierten steigt auf (\d+)/
+        const { groups } = await this.downloadAndMatch(
+            'https://www.landkreis-freudenstadt.de/Startseite/Aktuell/aktuelle+situation+im+landkreis+freudenstadt.html',
+            /Die Zahl der mit dem Coronavirus positiv getesteten Personen im Landkreis Freudenstadt ist am \w+ \((?<updateDate>[^)]+)\) auf (?<cumulatedInfected>\d+) gestiegen/
         );
         return {
+            ...groups,
             NUTS: 'DE12C',
-            cumulatedInfected: parseInt(matches[1], 10)
+            updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD')
         };
     }
 }
