@@ -1,17 +1,15 @@
-import { Scraper } from '../scraper';
+import { Scraper, parseNumber } from '../scraper';
 
 class Bodenseekreis extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.bodenseekreis.de/de/soziales-gesundheit/gesundheit/infektionsschutz/infektionskrankheiten/corona-virus/',
-            /Labordiagnostisch bestätigte Infektionsfälle seit Ausbruch: <\/b>(\d+) \((\d+) gelten zwischenzeitlich als genesen\)[^]*?Personen in stationärer Behandlung: <\/b>(\d+)[^]*?Personen in behördlich angeordneter häuslicher Quarantäne: <\/b>\s*(\d+)/
+            /<li><strong>Gestorbene Personen:\s*<\/strong>(?<cumulatedDeaths>\d+)\s*<\/li>\s*<li><strong>Personen in stationärer Behandlung:\s*<\/strong>\s*(?<currentlyHospitalized>\d+)\s*<\/li>\s*<li><b>Labordiagnostisch bestätigte Infektionsfälle seit Ausbruch:\s*<\/b>\s*(?<cumulatedInfected>\d+)\s*\((?<cumulatedRecovered>\d+) gelten zwischenzeitlich als genesen\)[^]+?<li><b>Personen in behördlich angeordneter häuslicher Quarantäne:\s*<\/b>(?<currentlyQuarantined>\d+)\s*,\s*(?<cumulatedReleasedFromQuarantine>\d+)\s*weitere Personen wurden bereits wieder aus der Quarantäne entlassen</
         );
         return {
+            ...groups,
             NUTS: 'DE147',
-            cumulatedInfected: parseInt(matches[1], 10),
-            cumulatedRecovered: parseInt(matches[2], 10),
-            currentlyHospitalized: parseInt(matches[3], 10),
-            cumulatedQuarantined: parseInt(matches[4], 10)
+            cumulatedQuarantined: parseNumber(groups.currentlyQuarantined) + parseNumber(groups.cumulatedReleasedFromQuarantine)
         };
     }
 }
