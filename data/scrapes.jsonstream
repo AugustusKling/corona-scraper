@@ -9341,3 +9341,4 @@
 {"updateDate":"2020-03-28","cumulatedInfected":122,"cumulatedDeaths":2,"cumulatedRecovered":33,"NUTS":"CH063","scraper":"schwyz","scrapedAt":"2020-03-28T18:58:32.427Z"}
 {"updateDate":"2020-03-27T12:30:00.000Z","cumulatedInfected":67,"NUTS":"DE27D","scraper":"donau-ries","scrapedAt":"2020-03-28T19:21:51.980Z"}
 {"updateDate":"2020-03-28","cumulatedInfected":106,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-03-28T19:28:26.728Z"}
+{"updateDate":"2020-03-26","cumulatedInfected":226,"cumulatedRecovered":23,"currentlyQuarantained":549,"NUTS":"DE217","scraper":"dachau","scrapedAt":"2020-03-28T19:38:37.842Z"}
