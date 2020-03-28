@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.traunstein.com/aktuelles',
-            /<div class="field presse_datum">(?<updateDate>\d\d\.\d\d.\d\d\d\d).+?Aktuelle Informationen zum Corona-Virus im LK TS - insgesamt (?<cumulatedInfected>\d+) bestätigte Corona-Fälle/
+            /<div class="field presse_datum">(?<updateDate>\d\d\.\d\d.\d\d\d\d).+?(?!<\/a>)insgesamt (?<cumulatedInfected>\d+) bestätigte Corona-Fälle/i
         );
         return {
             NUTS: 'DE21M',
