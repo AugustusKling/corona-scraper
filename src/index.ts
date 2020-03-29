@@ -48,7 +48,9 @@ async function scrape() {
             }
         } );
     } );
-    for(const scraperName of scrapers) {
+    const selectedScrapers = scrapers.filter(scraperName => process.argv.length === 2 || scraperName.replace(/[.]ts$/, '') === process.argv[2]);
+    for(const scraperName of selectedScrapers) {
+        console.log('Running scraper: ' + scraperName);
         const scraper: Scraper = (await import( __dirname + '/scrapers/' + scraperName )).scraper;
         const scraperId = scraperName.replace(/[.]ts$/, '');
         try {
