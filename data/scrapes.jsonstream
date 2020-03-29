@@ -4353,3 +4353,4 @@
 {"NUTS":"CH066","updateDate":"2020-03-27T17:00:00.000Z","cumulatedInfected":101,"cumulatedRecovered":18,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-29T08:58:05.895Z"}
 {"updateDate":"2020-03-28T13:00:00.000Z","cumulatedInfected":1720,"currentlyHospitalized":187,"cumulatedDeaths":15,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-29T08:58:06.647Z"}
 {"updateDate":"2020-03-28","cumulatedInfected":164,"NUTS":"DE276","scraper":"augsburg-landkreis","scrapedAt":"2020-03-29T10:20:22.338Z"}
+{"cumulatedInfected":113,"updateDate":"2020-03-28","NUTS":"DE27C","scraper":"unterallgäu","scrapedAt":"2020-03-29T10:26:34.122Z"}
