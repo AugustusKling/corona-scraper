@@ -4696,3 +4696,4 @@
 {"NUTS":"DE144","cumulatedInfected":116,"updateDate":"2020-03-29","population":126000,"scraper":"alb-donau-kreis","scrapedAt":"2020-03-29T18:48:48.362Z"}
 {"updateDate":"2020-03-29T05:30:00.000Z","cumulatedInfected":106,"NUTS":"DE214","scraper":"altötting","scrapedAt":"2020-03-29T18:53:53.175Z"}
 {"cumulatedDeaths":1,"currentlyHospitalized":14,"cumulatedInfected":196,"cumulatedRecovered":77,"currentlyQuarantined":412,"cumulatedReleasedFromQuarantine":574,"NUTS":"DE147","cumulatedQuarantined":986,"scraper":"bodenseekreis","scrapedAt":"2020-03-29T18:58:06.485Z"}
+{"updateDate":"2020-03-29","cumulatedInfected":161,"NUTS":"DE12C","scraper":"freudenstadt","scrapedAt":"2020-03-29T19:47:43.635Z"}
