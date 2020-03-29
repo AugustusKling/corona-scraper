@@ -5,12 +5,12 @@ class ScraperImpl extends Scraper {
     public async get() {
         const matches = await this.downloadAndMatch(
             'https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Departement-des-Innern/Gesundheitsamt-3209198-DE.html',
-            /Im Kanton Schaffhausen gibt es aktuell \(Stand (.{0,40}?) Uhr\) (\d+) bestätige Coronavirus-Fälle/
+            /Im Kanton Schaffhausen gibt es aktuell \(Stand (.{0,40}?) Uhr\)\s+(\d+)\s+bestätige Coronavirus-Fälle/
         );
         return {
             NUTS: 'CH052',
             cumulatedInfected: parseInt(matches[2], 10),
-            updateDate: moment.tz(matches[1], 'DD.MM.YYYY HH:mm', 'de', 'Europe/Berlin').toISOString()
+            updateDate: moment.tz(matches[1], 'DD.MM.YYYY, HH:mm', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }
