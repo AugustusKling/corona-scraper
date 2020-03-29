@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.landkreis-augsburg.de/soziales-gesundheit/staatliches-gesundheitsamt/coronavirus/',
-            /\+\+\+ UPDATE, \w+, (?<updateDate>[^+]+?) \+\+\+<\/strong><\/p><p>Aktuell (?<cumulatedInfected>\d+) bestätigte Fälle des Coronavirus im Landkreis Augsburg\./
+            /\+\+\+ UPDATE, \w+, (?<updateDate>[^+]+?) \+\+\+<\/strong><\/p><p>(?:\s*<br[^>]*>\s*)?Aktuell (?<cumulatedInfected>\d+) bestätigte Fälle des Coronavirus im Landkreis Augsburg\./
         );
         return {
             ...groups,
