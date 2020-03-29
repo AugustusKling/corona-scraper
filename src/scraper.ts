@@ -11,7 +11,7 @@ export abstract class Scraper {
             throw new Error('Failed to download: ' + response.statusText);
         }
         const responseText = await response.text();
-        const responseNormalized = responseText.replace(/&nbsp;|&#160;/g, ' ').replace(new RegExp(decodeURIComponent('%C2%A0'), 'g'), ' ').replace(/&auml;/g, 'ä').replace(/&uuml;|&#252;/g, 'ü');
+        const responseNormalized = responseText.replace(/&nbsp;|&#160;/g, ' ').replace(new RegExp(decodeURIComponent('%C2%A0'), 'g'), ' ').replace(/&auml;|&#228;/g, 'ä').replace(/&uuml;|&#252;/g, 'ü');
         const matches = responseNormalized.match(matcher);
         if (matches) {
             if (!matches.groups) {
