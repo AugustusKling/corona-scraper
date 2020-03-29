@@ -4697,3 +4697,4 @@
 {"updateDate":"2020-03-29T05:30:00.000Z","cumulatedInfected":106,"NUTS":"DE214","scraper":"altötting","scrapedAt":"2020-03-29T18:53:53.175Z"}
 {"cumulatedDeaths":1,"currentlyHospitalized":14,"cumulatedInfected":196,"cumulatedRecovered":77,"currentlyQuarantined":412,"cumulatedReleasedFromQuarantine":574,"NUTS":"DE147","cumulatedQuarantined":986,"scraper":"bodenseekreis","scrapedAt":"2020-03-29T18:58:06.485Z"}
 {"updateDate":"2020-03-29","cumulatedInfected":161,"NUTS":"DE12C","scraper":"freudenstadt","scrapedAt":"2020-03-29T19:47:43.635Z"}
+{"NUTS":"CH056","updateDate":"2020-03-27","cumulatedInfected":409,"currentlyHospitalized":52,"cumulatedDeaths":9,"scraper":"graubünden","scrapedAt":"2020-03-29T19:55:04.985Z"}
