@@ -3,16 +3,27 @@ import * as moment from 'moment-timezone';
 
 class AlbDonauKreis extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.alb-donau-kreis.de/alb-donau-kreis/startseite/dienstleistungen+service/coronavirus.html',
-            /Zahl der bestätigten Fälle im Alb-Donau-Kreis und Stadtkreis Ulm[^]+Stand: (.+) Uhr[^]+Alb-Donau-Kreis \(rund (.+?) Einwohner\): (\d+) Fälle/
+            /Stand: (?<updateDate>[^<]+?)<\/h5>\s*<ul><li>Insgesamt: \S+ Fälle<\/li><li>Alb-Donau-Kreis \(rund (?<populationAlbDonau>\S+) Einwohner\): (?<cumulatedInfectedAlbDonau>\S+) Fälle<\/li><li>Stadtkreis Ulm \(rund (?<populationUlm>\S+) Einwohner\): (?<cumulatedInfectedUlm>\S+) Fälle/
         );
-        return {
-            NUTS: 'DE145',
-            cumulatedInfected: parseInt(matches[3], 10),
-            updateDate: moment.tz(matches[1], 'DD.MM.YYYY, HH:mm', 'Europe/Berlin').toISOString(),
-            population: parseInt(matches[2].replace(/[.]/, ''), 10)
-        };
+        const updateDate = moment.tz(groups.updateDate, 'DD.MM.YYYY', 'Europe/Berlin').format('YYYY-MM-DD');
+        return [
+            {
+                // Alb-Donau-Kreis
+                NUTS: 'DE145',
+                cumulatedInfected: groups.cumulatedInfectedAlbDonau,
+                updateDate,
+                population: groups.populationAlbDonau
+            },
+            {
+                // Ulm
+                NUTS: 'DE144',
+                cumulatedInfected: groups.cumulatedInfectedUlm,
+                updateDate,
+                population: groups.populationUlm
+            }
+        ];
     }
 }
 

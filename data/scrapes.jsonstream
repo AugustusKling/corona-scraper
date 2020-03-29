@@ -4692,3 +4692,5 @@
 {"updateDate":"2020-03-29T15:00:00.000Z","cumulatedInfected":346,"cumulatedDeaths":4,"cumulatedRecovered":30,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-03-29T16:58:12.994Z"}
 {"NUTS":"CH066","updateDate":"2020-03-27T17:00:00.000Z","cumulatedInfected":101,"cumulatedRecovered":18,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-29T16:58:13.687Z"}
 {"updateDate":"2020-03-29T12:00:00.000Z","cumulatedInfected":1758,"currentlyHospitalized":194,"cumulatedDeaths":15,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-29T16:58:14.549Z"}
+{"NUTS":"DE145","cumulatedInfected":226,"updateDate":"2020-03-29","population":196000,"scraper":"alb-donau-kreis","scrapedAt":"2020-03-29T18:48:48.362Z"}
+{"NUTS":"DE144","cumulatedInfected":116,"updateDate":"2020-03-29","population":126000,"scraper":"alb-donau-kreis","scrapedAt":"2020-03-29T18:48:48.362Z"}
