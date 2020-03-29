@@ -1,17 +1,17 @@
 import { Scraper } from '../scraper';
-import * as moment from 'moment';
+import * as moment from 'moment-timezone';
 
 class Göppingen extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.landkreis-goeppingen.de/start/_Aktuelles/coronavirus.html',
-            /Bestätigte Corona-Fälle im Landkreis Göppingen: (\d+)\s*<br>\(Stand ([^)]+)\)/
+            /Bestätigte Corona-Fälle im Landkreis Göppingen: (?<cumulatedInfected>\d+) \(Stand (?<updateDate>[^)]+) Uhr\)/
         );
         
         return {
+            ...groups,
             NUTS: 'DE114',
-            cumulatedInfected: parseInt(matches[1], 10),
-            updateDate: moment(matches[2], 'DD.MM.YYYY').format('YYYY-MM-DD')
+            updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY, H:mm', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }

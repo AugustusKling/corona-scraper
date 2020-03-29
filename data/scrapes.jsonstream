@@ -4877,3 +4877,4 @@
 {"NUTS":"DEA16","updateDate":"2020-03-25T00:00:00+01:00","cumulatedInfected":40,"cumulatedRecovered":10,"cumulatedDeaths":0,"currentlyQuarantined":347,"scraper":"mülheim-ruhr","scrapedAt":"2020-03-29T21:48:23.844Z"}
 {"NUTS":"DEA16","updateDate":"2020-03-26T00:00:00+01:00","cumulatedInfected":42,"cumulatedRecovered":11,"cumulatedDeaths":0,"currentlyQuarantined":458,"scraper":"mülheim-ruhr","scrapedAt":"2020-03-29T21:48:31.322Z"}
 {"updateDate":"2020-03-28T09:39:00.000Z","cumulatedInfected":87,"NUTS":"DEA19","scraper":"solingen","scrapedAt":"2020-03-29T21:56:06.415Z"}
+{"cumulatedInfected":365,"updateDate":"2020-03-29T07:30:00.000Z","NUTS":"DE114","scraper":"göppingen","scrapedAt":"2020-03-29T22:21:14.704Z"}
