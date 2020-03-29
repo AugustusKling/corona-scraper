@@ -4882,3 +4882,4 @@
 {"cumulatedInfected":468,"cumulatedRecovered":84,"currentlyInfected":384,"updateDate":"2020-03-28T23:00:00.000Z","NUTS":"DE11D","scraper":"ostalbkreis","scrapedAt":"2020-03-29T22:34:22.691Z"}
 {"NUTS":"CH052","cumulatedInfected":40,"updateDate":"2020-03-29T06:00:00.000Z","scraper":"schaffhausen","scrapedAt":"2020-03-29T22:37:36.957Z"}
 {"updateDate":"2020-03-29T15:00:00.000Z","cumulatedInfected":590,"NUTS":"AT34","scraper":"vorarlberg","scrapedAt":"2020-03-29T22:51:32.447Z"}
+{"updateDate":"2020-03-29T14:00:00.000Z","cumulatedInfected":91,"cumulatedRecovered":17,"NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-03-29T22:55:26.739Z"}
