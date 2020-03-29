@@ -4355,3 +4355,4 @@
 {"updateDate":"2020-03-28","cumulatedInfected":164,"NUTS":"DE276","scraper":"augsburg-landkreis","scrapedAt":"2020-03-29T10:20:22.338Z"}
 {"cumulatedInfected":113,"updateDate":"2020-03-28","NUTS":"DE27C","scraper":"unterallgäu","scrapedAt":"2020-03-29T10:26:34.122Z"}
 {"updateDate":"2020-03-27T08:00:00.000Z","cumulatedInfected":172,"currentlyQuarantined":1271,"NUTS":"DEA1A","scraper":"wuppertal","scrapedAt":"2020-03-29T10:45:29.402Z"}
+{"cumulatedInfected":418,"updateDate":"2020-03-28T14:00:00.000Z","cumulatedDeaths":7,"cumulatedRecovered":80,"NUTS":"DE21B","scraper":"freising","scrapedAt":"2020-03-29T10:59:16.395Z"}
