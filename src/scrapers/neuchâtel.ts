@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.ne.ch/autorites/DFS/SCSP/medecin-cantonal/maladies-vaccinations/Pages/Coronavirus.aspx',
-            /Neuchâtel\s+(?<updateDate>[^<]+)<\/span><br>Nombre de cas confirmés &#58; (?<cumulatedInfected>\d+) personnes<br>Nombre de décès &#58; (?<cumulatedDeaths>\d+)/
+            /Neuchâtel\s+(?<updateDate>[^<]+)<\/span><br>Nombre de cas confirmés : (?<cumulatedInfected>\d+) personnes<br>Nombre de décès : (?<cumulatedDeaths>\d+)/
         );
         return {
             ...groups,
