@@ -4700,3 +4700,4 @@
 {"NUTS":"CH056","updateDate":"2020-03-27","cumulatedInfected":409,"currentlyHospitalized":52,"cumulatedDeaths":9,"scraper":"graubünden","scrapedAt":"2020-03-29T19:55:04.985Z"}
 {"updateDate":"2020-03-29T14:00:00.000Z","cumulatedInfected":320,"NUTS":"DEA1C","scraper":"mettmann","scrapedAt":"2020-03-29T20:13:45.349Z"}
 {"updateDate":"2020-03-28","cumulatedInfected":203,"NUTS":"DEA2A","scraper":"oberbergischer-kreis","scrapedAt":"2020-03-29T20:20:47.672Z"}
+{"NUTS":"DEA2B","updateDate":"2020-03-29","cumulatedInfected":200,"cumulatedRecovered":66,"cumulatedDeaths":2,"currentlyQuarantined":620,"scraper":"rheinisch-bergischer-kreis","scrapedAt":"2020-03-29T20:36:08.693Z"}
