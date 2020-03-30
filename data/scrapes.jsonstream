@@ -5596,3 +5596,4 @@
 {"updateDate":"2020-03-29T15:00:00.000Z","cumulatedInfected":346,"cumulatedRecovered":30,"cumulatedDeaths":4,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-03-30T12:58:20.084Z"}
 {"NUTS":"CH066","updateDate":"2020-03-30T06:00:00.000Z","cumulatedInfected":112,"cumulatedRecovered":29,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-30T12:58:20.793Z"}
 {"updateDate":"2020-03-29T12:00:00.000Z","cumulatedInfected":1758,"currentlyHospitalized":194,"cumulatedDeaths":15,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-30T12:58:21.591Z"}
+{"NUTS":"CH054","cumulatedInfected":14,"updateDate":"2020-03-30T10:00:00.000Z","scraper":"appenzell-innerrhoden","scrapedAt":"2020-03-30T16:10:51.247Z"}
