@@ -5,7 +5,7 @@ class Zollernalbkreis extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.zollernalbkreis.de/aktuelles/nachrichten/antworten+auf+haeufig+gestellte+fragen+zum+neuartigen+coronavirus',
-            /Gesamtzahlen Zollernalbkreis \(Stand: (?<updateDate>[^)]+?) Uhr\):<br>Zahl der Coronavirus-Infizierten: <strong>(?<cumulatedInfected>\d+)<\/strong><br>Todesfälle in Zusammenhang mit COVID-19: <strong>(?<cumulatedDeaths>\d+)<\/strong><br>Bereits Genesene: <strong>(?<cumulatedRecovered>\d+)<\/strong>/
+            /Gesamtzahlen Zollernalbkreis \(Stand: (?<updateDate>[^)]+?) Uhr\):<br>Zahl der Coronavirus-Infizierten: <strong>(?<cumulatedInfected>\d+)<\/strong><br>davon bereits genesen: <strong>(?<cumulatedRecovered>\d+)<\/strong><br>Todesfälle in Zusammenhang mit COVID-19: <strong>(?<cumulatedDeaths>\d+)<\/strong>/
         );
         return {
             ...groups,
