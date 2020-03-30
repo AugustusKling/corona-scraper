@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.donau-ries.de/Landratsamt/Buergerservice/Aufgabenbereiche/Gesundheitsamt-Humanmedizin.aspx',
-            /(?<updateDate>\d\d\.\d\d\.\d\d\d\d \d\d:\d\d) Uhr[^+]+?Das Gesundheitsamt des Landratsamtes Donau-Ries meldet mittlerweile\s+(?<cumulatedInfected>\d+)\s*bestätigte Erkrankte/
+            /(?<updateDate>\d\d\.\d\d\.\d\d\d\d \d\d:\d\d)[^+]+?Das Gesundheitsamt des Landratsamtes Donau-Ries meldet mittlerweile\s+(?<cumulatedInfected>\d+)\s*bestätigte Erkrankte/
         );
         return {
             ...groups,
