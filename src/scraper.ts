@@ -12,7 +12,7 @@ export abstract class Scraper {
         if (!response.ok) {
             throw new Error('Failed to download: ' + response.statusText);
         }
-        const responseText = new Iconv(encoding, 'utf-8').convert(Buffer.from(await response.arrayBuffer())).toString('utf-8');
+        const responseText = new Iconv(encoding, 'utf-8//ignore').convert(Buffer.from(await response.arrayBuffer())).toString('utf-8');
         const responseNormalized = responseText
             .replace(/&#(\d+);/g, (wholeMatch: string, group: string) => String.fromCharCode(parseInt(group, 10)))
             .replace(/&nbsp;/g, ' ')
