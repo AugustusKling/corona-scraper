@@ -4,11 +4,11 @@ import * as moment from 'moment-timezone';
 class Rastatt extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
-            'https://www.baden-baden.de/stadtportrait/aktuelles/themen/coronavirus/corona-aktuell/',
-            /In Baden-Baden sind inzwischen (?<cumulatedInfectedBadenBaden>\d+) Personen infiziert, im Landkreis Rastatt (?<cumulatedInfectedRastatt>\d+) Personen. Zusammen sind das \d+ Personen im Zuständigkeitsbereich des Gesundheitsamts Rastatt. Insgesamt sind \w+ Corona-Patienten genesen und aus der Quarantäne entlassen. \d+ aktive COVID-19-Fälle befinden sich in Quarantäne. \(Stand (?<updateDate>.{1,40}?) Uhr\)/
+            'https://www.landkreis-rastatt.de/Startseite/aktuelles/corona+-+aktuelle+situation+im+landkreis+rastatt+und+stadtkreis+baden-baden.html',
+            /<h2 class="basecontent-sub-heading">(?<updateDate>.{1,40}?) Uhr\)<\/h2>\s*<h3[^>]*>Aktuelle Fallzahl<\/h3>[^]+?Landkreis Rastatt: (?<cumulatedInfectedRastatt>\d+) Personen<br>Stadtkreis Baden-Baden: (?<cumulatedInfectedBadenBaden>\d+) Personen/
         );
         
-        const updateDate = moment.tz(groups.updateDate, 'DD. MMM, HH', 'de', 'Europe/Berlin').toISOString();
+        const updateDate = moment.tz(groups.updateDate, 'DD. MMM YYYY[(Stand: ]HH:mm', 'de', 'Europe/Berlin').toISOString();
         return [
             {
                 // Baden-Baden

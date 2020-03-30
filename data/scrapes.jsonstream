@@ -5417,3 +5417,5 @@
 {"updateDate":"2020-03-30T07:00:00.000Z","cumulatedInfected":193,"currentlyQuarantined":1700,"NUTS":"DEA1A","scraper":"wuppertal","scrapedAt":"2020-03-30T11:56:22.635Z"}
 {"updateDate":"2020-03-29T15:00:00.000Z","cumulatedInfected":346,"cumulatedRecovered":30,"cumulatedDeaths":4,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-03-30T11:59:21.380Z"}
 {"updateDate":"2020-03-29","cumulatedInfected":304,"NUTS":"DE134","scraper":"ortenaukreis","scrapedAt":"2020-03-30T12:16:12.598Z"}
+{"NUTS":"DE121","cumulatedInfected":73,"updateDate":"2020-03-30T10:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-30T12:22:54.492Z"}
+{"NUTS":"DE124","cumulatedInfected":279,"updateDate":"2020-03-30T10:00:00.000Z","scraper":"rastatt","scrapedAt":"2020-03-30T12:22:54.492Z"}
