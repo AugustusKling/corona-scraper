@@ -5,7 +5,7 @@ class Göppingen extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.landkreis-goeppingen.de/start/_Aktuelles/coronavirus.html',
-            /Bestätigte Corona-Fälle im Landkreis Göppingen: (?<cumulatedInfected>\d+) \(Stand (?<updateDate>[^)]+) Uhr\)/
+            /Bestätigte Corona-Fälle: (?<cumulatedInfected>\d+)<br>Todesfälle: (?<cumulatedDeaths>\d+)<br>Genesene Personen: (?<cumulatedRecovered>\d+)<br>\(Stand: (?<updateDate>[^)]+) Uhr\)/
         );
         
         return {
