@@ -2,13 +2,13 @@ import { Scraper } from '../scraper';
 
 class Konstanz extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
+        const { groups } = await this.downloadAndMatch(
             'https://www.lrakn.de/,Lde/service-und-verwaltung/aemter/gesundheit+und+versorgung/coronavirus',
-            /Aktuell gibt es im Landkreis Konstanz (\d+) bestätigte Fälle einer Coronavireninfektion./
+            /Nach dieser Zählweise steigt die Zahl der erkrankten Personen auf (?<cumulatedInfected>\d+)\.[^]+(?<cumulatedRecovered>\d+) Personen gelten als genesen/
         );
         return {
-            NUTS: 'DE138',
-            cumulatedInfected: parseInt(matches[1], 10)
+            ...groups,
+            NUTS: 'DE138'
         };
     }
 }

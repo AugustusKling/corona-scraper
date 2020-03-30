@@ -5407,3 +5407,4 @@
 {"NUTS":"CH066","updateDate":"2020-03-30T06:00:00.000Z","cumulatedInfected":112,"cumulatedRecovered":29,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-30T08:58:13.758Z"}
 {"updateDate":"2020-03-29T12:00:00.000Z","cumulatedInfected":1758,"currentlyHospitalized":194,"cumulatedDeaths":15,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-03-30T08:58:14.493Z"}
 {"cumulatedInfected":388,"cumulatedDeaths":6,"cumulatedRecovered":56,"updateDate":"2020-03-30T06:30:00.000Z","NUTS":"DE114","scraper":"göppingen","scrapedAt":"2020-03-30T11:36:28.607Z"}
+{"cumulatedInfected":145,"cumulatedRecovered":4,"NUTS":"DE138","scraper":"konstanz","scrapedAt":"2020-03-30T11:41:25.197Z"}
