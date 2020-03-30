@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.wuppertal.de/presse/meldungen/meldungen-2020/maerz20/zahlen-und-hotline-corona.php',
-            /Am (?<updateDate>\d\d\.\d(?:<\/strong><strong>)?\. um \d+) Uhr lag die Zahl der Corona-Infizierten in Wuppertal bei (?<cumulatedInfected>\d+).+?Inklusive dieser Infizierten befinden sich (?<currentlyQuarantined>\d+) Menschen in Wuppertal in Quarantäne/
+            /Am (?<updateDate>\d\d\.\d(?:<\/strong><strong>)?\. um \d+) Uhr lag die Zahl der Corona-Infizierten in Wuppertal bei (?<cumulatedInfected>\d+).+?Inklusive dieser Infizierten befinden sich (?<currentlyQuarantined>\d+) Menschen in Wuppertal in(?: einer angeordneten)? Quarantäne/
         );
         return {
             ...groups,
