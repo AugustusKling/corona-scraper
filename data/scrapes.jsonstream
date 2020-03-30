@@ -5773,3 +5773,4 @@
 {"updateDate":"2020-03-30T15:00:00.000Z","cumulatedInfected":90,"NUTS":"DE27D","scraper":"donau-ries","scrapedAt":"2020-03-30T17:35:41.773Z"}
 {"updateDate":"2020-03-30","currentlyHospitalized":77,"currentlyIntensiveCare":16,"cumulatedDeaths":17,"cumulatedInfected":477,"NUTS":"CH022","scraper":"fribourg","scrapedAt":"2020-03-30T17:41:04.957Z"}
 {"updateDate":"2020-03-30","cumulatedInfected":177,"NUTS":"DE12C","scraper":"freudenstadt","scrapedAt":"2020-03-30T17:46:31.903Z"}
+{"updateDate":"2020-03-30","cumulatedInfected":1281,"cumulatedRecovered":554,"cumulatedDeaths":34,"NUTS":"DEA29","scraper":"heinsberg","scrapedAt":"2020-03-30T18:59:41.637Z"}

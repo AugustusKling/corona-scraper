@@ -4,8 +4,9 @@ import * as moment from 'moment-timezone';
 class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
-            'https://www.kreis-heinsberg.de/aktuelles/aktuelles/?pid=5142',
-            /\((?<updateDate>[^)]+)\) Aktuell gibt es im Kreis Heinsberg (?<cumulatedInfected>\d+) best.tigte Coronavirus-Infektionen/
+            'https://www.kreis-heinsberg.de/aktuelles/aktuelles/',
+            /\(Meldung vom (?<updateDate>[^)]+)\)[^(]+?(?<cumulatedInfected>\d+) Fälle, (?<cumulatedRecovered>\d+) Genesene, (?<cumulatedDeaths>\d+) Todesfälle/,
+            'windows-1252'
         );
         return {
             ...groups,

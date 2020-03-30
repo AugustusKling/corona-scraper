@@ -1,21 +1,23 @@
 import fetch from 'node-fetch';
+const Iconv = require('iconv').Iconv;
+const Buffer = require('buffer').Buffer;
 import { Moment } from 'moment';
 
 export abstract class Scraper {
 
     public abstract get(): Promise<RawScrape | RawScrape[]>;
     
-    protected async downloadAndMatch(url: string, matcher: RegExp): Promise<string[] & { groups: Record<string, string>}> {
+    protected async downloadAndMatch(url: string, matcher: RegExp, encoding = 'utf-8'): Promise<string[] & { groups: Record<string, string>}> {
         const response = await fetch(url);
         if (!response.ok) {
             throw new Error('Failed to download: ' + response.statusText);
         }
-        const responseText = await response.text();
+        const responseText = new Iconv(encoding, 'utf-8').convert(Buffer.from(await response.arrayBuffer())).toString('utf-8');
         const responseNormalized = responseText
-            .replace(/&nbsp;|&#160;/g, ' ').replace(new RegExp(decodeURIComponent('%C2%A0'), 'g'), ' ')
-            .replace(/&auml;|&#228;/g, 'ä')
-            .replace(/&uuml;|&#252;/g, 'ü')
-            .replace(/&#58;/g, ':');
+            .replace(/&#(\d+);/g, (wholeMatch: string, group: string) => String.fromCharCode(parseInt(group, 10)))
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&auml;/g, 'ä')
+            .replace(/&uuml;/g, 'ü');
         const matches = responseNormalized.match(matcher);
         if (matches) {
             if (!matches.groups) {
