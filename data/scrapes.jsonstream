@@ -6931,3 +6931,4 @@
 {"NUTS":"CH066","updateDate":"2020-03-31T06:00:00.000Z","cumulatedInfected":114,"cumulatedRecovered":39,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-31T20:58:13.506Z"}
 {"NUTS":"DE216","updateDate":"2020-03-31","cumulatedInfected":177,"scraper":"tölz","scrapedAt":"2020-04-01T00:00:00.143Z"}
 {"NUTS":"CH032","updateDate":"2020-03-31","cumulatedInfected":561,"cumulatedDeaths":10,"scraper":"basel-landschaft","scrapedAt":"2020-04-01T00:09:07.464Z"}
+{"updateDate":"2020-03-31","cumulatedInfected":856,"currentlyHospitalized":111,"currentlyIntensiveCare":23,"cumulatedDeaths":16,"NUTS":"CH021","scraper":"bern","scrapedAt":"2020-04-01T00:28:54.473Z"}
