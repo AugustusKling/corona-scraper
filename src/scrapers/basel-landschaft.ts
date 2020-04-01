@@ -4,7 +4,7 @@ import * as moment from 'moment-timezone';
 class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
-            'https://www.statistik.bl.ch/files/sites/Grafiken/COVID19/Grafik_COVID19_BL_Linie.htm',
+            'https://www.statistik.bl.ch/files/sites/Grafiken/COVID19/20200331_COVID19_BL.htm',
             /<pre id="data" style="display:none;">[^]*(?<updateDate>\d\d\-\d\d\-\d\d\d\d),(?<cumulatedInfected>\d+),(?<cumulatedDeaths>\d+)\s*<\/pre>/
         );
         return {
