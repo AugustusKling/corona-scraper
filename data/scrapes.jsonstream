@@ -6929,3 +6929,4 @@
 {"NUTS":"CH012","cumulatedInfected":1085,"cumulatedDeaths":35,"updateDate":"2020-03-31","scraper":"valais","scrapedAt":"2020-03-31T20:58:08.183Z"}
 {"updateDate":"2020-03-31T16:00:00.000Z","cumulatedInfected":419,"cumulatedRecovered":43,"cumulatedDeaths":8,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-03-31T20:58:12.789Z"}
 {"NUTS":"CH066","updateDate":"2020-03-31T06:00:00.000Z","cumulatedInfected":114,"cumulatedRecovered":39,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-03-31T20:58:13.506Z"}
+{"NUTS":"DE216","updateDate":"2020-03-31","cumulatedInfected":177,"scraper":"tölz","scrapedAt":"2020-04-01T00:00:00.143Z"}
