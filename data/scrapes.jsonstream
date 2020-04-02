@@ -8341,3 +8341,4 @@
 {"updateDate":"2020-04-01T14:30:00.000Z","cumulatedInfected":317,"cumulatedDeaths":7,"cumulatedRecovered":81,"NUTS":"DE139","scraper":"lörrach","scrapedAt":"2020-04-02T11:14:36.151Z"}
 {"updateDate":"2020-04-02T09:00:00.000Z","cumulatedInfected":422,"currentlyHospitalized":66,"currentlyIntensiveCare":11,"cumulatedDeaths":7,"NUTS":"CH061","scraper":"luzern","scrapedAt":"2020-04-02T11:26:08.763Z"}
 {"updateDate":"2020-04-01T11:30:00.000Z","cumulatedInfected":2926,"cumulatedRecovered":487,"NUTS":"DE212","scraper":"stadt-münchen","scrapedAt":"2020-04-02T11:43:09.031Z"}
+{"updateDate":"2020-03-31T13:55:00.000Z","cumulatedInfected":101,"NUTS":"DE127","scraper":"neckar-odenwald-kreis","scrapedAt":"2020-04-02T11:48:27.454Z"}
