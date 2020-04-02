@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.landratsamt-unterallgaeu.de/buergerservice/gesundheit/coronavirus.html',
-            /Im Unterallgäu gibt es(?: inzwischen)? (?<cumulatedInfected>\d+) (?:bestätigte )?Corona-Fälle[^]+?\(Stand: (?<updateDate>[^)]+?)\)/
+            /Im Unterallgäu gibt es(?: inzwischen)? (?<cumulatedInfected>\d+) (?:bestätigte )?Corona-Fälle[^]+?Stand: (?<updateDate>[^)]+?)\./
         );
         return {
             ...groups,
