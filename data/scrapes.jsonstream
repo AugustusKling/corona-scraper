@@ -8172,3 +8172,4 @@
 {"updateDate":"2020-04-01T16:45:00.000Z","cumulatedInfected":452,"cumulatedRecovered":51,"cumulatedDeaths":9,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-02T04:58:33.737Z"}
 {"NUTS":"CH066","updateDate":"2020-04-01T06:00:00.000Z","cumulatedInfected":125,"cumulatedRecovered":40,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-04-02T04:58:34.443Z"}
 {"NUTS":"DE149","population":130275,"updateDate":"2020-04-02T00:00:00.000Z","cumulatedInfected":428,"cumulatedDeaths":6,"scraper":"sigmaringen","scrapedAt":"2020-04-02T07:12:43.064Z"}
+{"NUTS":"DE146","updateDate":"2020-04-01T15:00:00.000Z","cumulatedInfected":260,"scraper":"biberach","scrapedAt":"2020-04-02T07:38:41.606Z"}
