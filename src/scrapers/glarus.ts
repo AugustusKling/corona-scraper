@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.gl.ch/verwaltung/finanzen-und-gesundheit/gesundheit/coronavirus.html/4817',
-            /Update Kanton Glarus.+?\(Stand: (?<updateDate>.+?) Uhr\)[^]*Bestätigte Fälle: <strong>\s*(?<cumulatedInfected>\d+)\s*<\/strong>.+?Hospitalisierungen: <strong>\s*(?<cumulatedHospitalized>\d+)\s*<\/strong>/
+            /Update Kanton Glarus.+?\(Stand: (?<updateDate>.+?) Uhr\)[^]*Bestätigte Fälle: <strong>\s*(?<cumulatedInfected>\d+)\s*<\/strong>.+?Personen in Spitalpflege: <strong>\s*(?<cumulatedHospitalized>\d+)\s*<\/strong>.+?Verstorbene Personen: <strong>(?<cumulatedDeaths>\d+)\s*<\/strong>/
         );
         return {
             NUTS: 'CH051',
