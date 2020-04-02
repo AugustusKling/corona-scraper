@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.landkreis-waldshut.de/aktuelles/informationen-zum-neuartigen-coronavirus/',
-            /Im Landkreis Waldshut gibt es aktuell \(Stand (?<updateDate>[^<]+) Uhr\) (?<cumulatedInfected>\d+) bestätigte Coronavirus-Fälle.*?Von den bisher festgestellten Corona-Infektionen gelten(?: bereits)? (?<cumulatedRecovered>\d+) Personen als geheilt/
+            /\(Stand:? (?<updateDate>[^<]+) Uhr\)[^]+?derzeit (?<cumulatedInfected>\d+) Covid-19-Infizierte gemeldet[^]+?(?<cumulatedRecovered>\d+) Personen gelten(?: bereits)? als genesen[^]+?(?<currentlyHospitalized>\d+) Erkrankte befinden sich derzeit in stationärer Behandlung/
         );
         return {
             ...groups,

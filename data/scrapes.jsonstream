@@ -8350,3 +8350,4 @@
 {"cumulatedInfected":2271,"cumulatedDeaths":141,"updateDate":"2020-04-02T06:00:00.000Z","NUTS":"CH070","scraper":"ticino","scrapedAt":"2020-04-02T12:38:55.486Z"}
 {"cumulatedInfected":139,"updateDate":"2020-04-01","NUTS":"DE27C","scraper":"unterallgäu","scrapedAt":"2020-04-02T12:42:30.019Z"}
 {"cumulatedInfected":683,"currentlyHospitalized":39,"currentlyIntensiveCare":12,"NUTS":"AT34","scraper":"vorarlberg","scrapedAt":"2020-04-02T12:47:09.162Z"}
+{"updateDate":"2020-04-01T15:00:00.000Z","cumulatedInfected":132,"cumulatedRecovered":30,"currentlyHospitalized":15,"NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-04-02T12:53:17.180Z"}
