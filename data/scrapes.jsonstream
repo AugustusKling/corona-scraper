@@ -8339,3 +8339,4 @@
 {"updateDate":"2020-04-01","cumulatedInfected":144,"currentlyHospitalized":29,"currentlyIntensiveCare":5,"NUTS":"CH025","scraper":"jura","scrapedAt":"2020-04-02T11:03:21.477Z"}
 {"updateDate":"2020-03-31T22:00:00.000Z","cumulatedInfected":234,"cumulatedRecovered":69,"currentlyHospitalized":20,"cumulatedDeaths":2,"NUTS":"DE138","scraper":"konstanz","scrapedAt":"2020-04-02T11:11:02.855Z"}
 {"updateDate":"2020-04-01T14:30:00.000Z","cumulatedInfected":317,"cumulatedDeaths":7,"cumulatedRecovered":81,"NUTS":"DE139","scraper":"lörrach","scrapedAt":"2020-04-02T11:14:36.151Z"}
+{"updateDate":"2020-04-02T09:00:00.000Z","cumulatedInfected":422,"currentlyHospitalized":66,"currentlyIntensiveCare":11,"cumulatedDeaths":7,"NUTS":"CH061","scraper":"luzern","scrapedAt":"2020-04-02T11:26:08.763Z"}
