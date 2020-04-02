@@ -4840,3 +4840,4 @@
 {"updateDate":"2020-04-02T15:00:00.000Z","cumulatedInfected":480,"cumulatedRecovered":60,"cumulatedDeaths":9,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-02T16:58:45.964Z"}
 {"NUTS":"CH066","updateDate":"2020-04-02T06:00:00.000Z","cumulatedInfected":131,"cumulatedRecovered":41,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-04-02T16:58:46.745Z"}
 {"updateDate":"2020-04-02T15:00:00.000Z","cumulatedInfected":2323,"currentlyHospitalized":200,"cumulatedDeaths":36,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-04-02T16:58:47.411Z"}
+{"cumulatedInfected":735,"updateDate":"2020-04-02T10:00:00.000Z","cumulatedDeaths":9,"cumulatedRecovered":175,"NUTS":"DE21H","scraper":"landkreis-münchen","scrapedAt":"2020-04-02T21:03:59.623Z"}
