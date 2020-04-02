@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.nw.ch/gesundheitsamtdienste/6044',
-            /Stand: (?<updateDate>.{5,40}) Uhr[^]+Positiv getestete Personen: (?<cumulatedInfected>\d+)<br \/>\s*Am Virus verstorbene Personen: (?<cumulatedDeaths>\d+)/
+            /Stand: (?<updateDate>.{5,40}) Uhr[^]+Positiv getestete Personen:\s*<strong>\s*(?<cumulatedInfected>\d+)[^]+?verstorbene Personen:\s*<strong>\s*(?<cumulatedDeaths>\d+)/i
         );
         return {
             ...groups,
