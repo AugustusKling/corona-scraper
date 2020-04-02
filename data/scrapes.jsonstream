@@ -8174,3 +8174,4 @@
 {"NUTS":"DE149","population":130275,"updateDate":"2020-04-02T00:00:00.000Z","cumulatedInfected":428,"cumulatedDeaths":6,"scraper":"sigmaringen","scrapedAt":"2020-04-02T07:12:43.064Z"}
 {"NUTS":"DE146","updateDate":"2020-04-01T15:00:00.000Z","cumulatedInfected":260,"scraper":"biberach","scrapedAt":"2020-04-02T07:38:41.606Z"}
 {"NUTS":"CH054","cumulatedInfected":19,"updateDate":"2020-04-02T06:00:00.000Z","scraper":"appenzell-innerrhoden","scrapedAt":"2020-04-02T07:41:21.594Z"}
+{"updateDate":"2020-04-01T22:00:00.000Z","cumulatedInfected":201,"cumulatedRecovered":51,"cumulatedDeaths":3,"NUTS":"DE271","scraper":"augsburg-stadt","scrapedAt":"2020-04-02T07:49:42.415Z"}
