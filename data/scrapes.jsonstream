@@ -8332,3 +8332,4 @@
 {"cumulatedInfected":373,"updateDate":"2020-04-01T15:00:00.000Z","NUTS":"DE217","scraper":"dachau","scrapedAt":"2020-04-02T09:39:49.623Z"}
 {"updateDate":"2020-04-01T14:00:00.000Z","cumulatedInfected":496,"NUTS":"DEA11","scraper":"düsseldorf","scrapedAt":"2020-04-02T09:47:35.388Z"}
 {"updateDate":"2020-03-31","cumulatedInfected":350,"currentlyHospitalized":25,"currentlyIntensiveCare":10,"NUTS":"DE21A","scraper":"erding","scrapedAt":"2020-04-02T10:07:00.737Z"}
+{"cumulatedInfected":137,"cumulatedDeaths":1,"updateDate":"2020-04-01T12:00:00.000Z","NUTS":"DE21D","scraper":"garmisch-partenkirchen","scrapedAt":"2020-04-02T10:10:47.981Z"}

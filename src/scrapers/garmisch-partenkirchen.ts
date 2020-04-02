@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.lra-gap.de/de/coronavirus.html',
-            /im Landkreis Garmisch-Partenkirchen <strong>(?<cumulatedInfected>\d+)<\/strong> nachweislich Corona-Erkrankte \(Stand (?<updateDate>.{10,40}) Uhr\)/
+            /im Landkreis Garmisch-Partenkirchen <strong>(?<cumulatedInfected>\d+)<\/strong> nachweislich Corona-Erkrankte und <strong>(?<cumulatedDeaths>\d+)<\/strong> am Coronavirus Verstorbenen? \(Stand (?<updateDate>.{10,40}) Uhr\)/
         );
         return {
             ...groups,
