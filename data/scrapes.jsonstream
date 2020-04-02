@@ -8336,3 +8336,4 @@
 {"NUTS":"CH051","updateDate":"2020-04-01T11:30:00.000Z","cumulatedInfected":56,"cumulatedHospitalized":5,"scraper":"glarus","scrapedAt":"2020-04-02T10:17:35.490Z"}
 {"NUTS":"DE125","cumulatedInfected":195,"updateDate":"2020-04-01","scraper":"rhein-neckar-kreis","scrapedAt":"2020-04-02T10:41:18.464Z"}
 {"NUTS":"DE128","cumulatedInfected":625,"updateDate":"2020-04-01","scraper":"rhein-neckar-kreis","scrapedAt":"2020-04-02T10:41:18.464Z"}
+{"updateDate":"2020-04-01","cumulatedInfected":144,"currentlyHospitalized":29,"currentlyIntensiveCare":5,"NUTS":"CH025","scraper":"jura","scrapedAt":"2020-04-02T11:03:21.477Z"}
