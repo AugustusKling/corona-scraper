@@ -8334,3 +8334,5 @@
 {"updateDate":"2020-03-31","cumulatedInfected":350,"currentlyHospitalized":25,"currentlyIntensiveCare":10,"NUTS":"DE21A","scraper":"erding","scrapedAt":"2020-04-02T10:07:00.737Z"}
 {"cumulatedInfected":137,"cumulatedDeaths":1,"updateDate":"2020-04-01T12:00:00.000Z","NUTS":"DE21D","scraper":"garmisch-partenkirchen","scrapedAt":"2020-04-02T10:10:47.981Z"}
 {"NUTS":"CH051","updateDate":"2020-04-01T11:30:00.000Z","cumulatedInfected":56,"cumulatedHospitalized":5,"scraper":"glarus","scrapedAt":"2020-04-02T10:17:35.490Z"}
+{"NUTS":"DE125","cumulatedInfected":195,"updateDate":"2020-04-01","scraper":"rhein-neckar-kreis","scrapedAt":"2020-04-02T10:41:18.464Z"}
+{"NUTS":"DE128","cumulatedInfected":625,"updateDate":"2020-04-01","scraper":"rhein-neckar-kreis","scrapedAt":"2020-04-02T10:41:18.464Z"}

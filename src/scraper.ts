@@ -15,7 +15,7 @@ export abstract class Scraper {
         const responseText = new Iconv(encoding, 'utf-8//ignore').convert(Buffer.from(await response.arrayBuffer())).toString('utf-8');
         const responseNormalized = responseText
             .replace(/&#(\d+);/g, (wholeMatch: string, group: string) => String.fromCharCode(parseInt(group, 10)))
-            .replace(/&nbsp;/g, ' ')
+            .replace(/&nbsp;/g, ' ').replace(new RegExp(decodeURIComponent('%C2%A0'), 'g'), ' ')
             .replace(/&auml;/g, 'ä')
             .replace(/&uuml;/g, 'ü');
         const matches = responseNormalized.match(matcher);
