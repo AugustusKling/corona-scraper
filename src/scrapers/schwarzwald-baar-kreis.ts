@@ -1,14 +1,21 @@
 import { Scraper } from '../scraper';
+import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
-            'https://www.lrasbk.de/Kurzmen%C3%BC/Suche/index.php?qs=insgesamt+best%E4tigte+f%E4lle&opt3=&vt_exclude=&opt6=&vt_dat_von=&vt_dat_bis=&opt4=3&sd=-1&max_1=10&NavID=2961.10',
-            /<em>insgesamt<\/em>\s+(\d+)\s+<em>best.tigte<\/em>\s+<em>F.lle<\/em>/
+        const pressreleases = await this.downloadAndMatch(
+            'https://www.lrasbk.de/Kurzmen%C3%BC/Startseite/Infos-zum-Coronavirus.php?object=tx,2961.5&ModID=7&FID=2961.13112.1',
+            /<a class="csslink_intern" href="(?<url>[^"]+)">\s*Coronavirus.+?Stand: (?<updateDate>\d\d\.\d\d\.\d\d\d\d)[^\d]+?(?<updateHour>\d+) Uhr\s*<\/a>/
+        );
+        const articleUrl = 'https://www.lrasbk.de' + pressreleases.groups.url.replace(/&amp;/g, '&');
+        const { groups } = await this.downloadAndMatch(
+            articleUrl,
+            /(?<cumulatedInfected>\d+) bestätigte Coronavirus-Fälle.+?(?<cumulatedRecovered>\d+) Personen sind genesen/
         );
         return {
+            ...groups,
             NUTS: 'DE136',
-            cumulatedInfected: parseInt(matches[1], 10)
+            updateDate: moment.tz(pressreleases.groups.updateDate + ' ' + pressreleases.groups.updateHour, 'DD.MM.YYYY HH', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }
