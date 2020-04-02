@@ -8347,3 +8347,4 @@
 {"cumulatedInfected":560,"cumulatedRecovered":202,"currentlyInfected":356,"cumulatedDeaths":2,"updateDate":"2020-04-01","NUTS":"DE11D","scraper":"ostalbkreis","scrapedAt":"2020-04-02T12:03:58.764Z"}
 {"NUTS":"CH052","cumulatedInfected":44,"updateDate":"2020-04-02T06:00:00.000Z","scraper":"schaffhausen","scrapedAt":"2020-04-02T12:07:29.599Z"}
 {"cumulatedInfected":254,"cumulatedRecovered":48,"NUTS":"DE136","updateDate":"2020-04-02T10:00:00.000Z","scraper":"schwarzwald-baar-kreis","scrapedAt":"2020-04-02T12:33:49.361Z"}
+{"cumulatedInfected":2271,"cumulatedDeaths":141,"updateDate":"2020-04-02T06:00:00.000Z","NUTS":"CH070","scraper":"ticino","scrapedAt":"2020-04-02T12:38:55.486Z"}

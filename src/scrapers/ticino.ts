@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www4.ti.ch/dss/dsp/covid19/home/',
-            />(?<cumulatedInfected>[\d']+)<\/p><p[^>]*>Casi positivi COVID-19<\/p><p[^>]*>(?<cumulatedDeaths>[\d']+)<\/p><p[^>]*>Decessi<\/p><\/div><\/a><h4>Stato complessivo al:<\/h4><h4>(?<updateDate>[^<]+?)<\/h4>/
+            />(?<cumulatedInfected>[\d']+)<\/p><p[^>]*>Casi positivi COVID-19<\/p><p[^>]*>(?<cumulatedDeaths>[\d']+)<\/p><p[^>]*>Decessi<\/p>.+Stato complessivo al:<br \/><b>(?<updateDate>[^<]+?)</
         );
         return {
             ...groups,
