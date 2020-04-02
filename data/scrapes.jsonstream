@@ -8331,3 +8331,4 @@
 {"NUTS":"CH066","updateDate":"2020-04-02T06:00:00.000Z","cumulatedInfected":131,"cumulatedRecovered":41,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-04-02T08:58:40.265Z"}
 {"cumulatedInfected":373,"updateDate":"2020-04-01T15:00:00.000Z","NUTS":"DE217","scraper":"dachau","scrapedAt":"2020-04-02T09:39:49.623Z"}
 {"updateDate":"2020-04-01T14:00:00.000Z","cumulatedInfected":496,"NUTS":"DEA11","scraper":"düsseldorf","scrapedAt":"2020-04-02T09:47:35.388Z"}
+{"updateDate":"2020-03-31","cumulatedInfected":350,"currentlyHospitalized":25,"currentlyIntensiveCare":10,"NUTS":"DE21A","scraper":"erding","scrapedAt":"2020-04-02T10:07:00.737Z"}
