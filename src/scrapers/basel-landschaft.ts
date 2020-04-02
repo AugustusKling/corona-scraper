@@ -3,15 +3,18 @@ import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
+        const statisticUrlMatches = await this.downloadAndMatch(
+            'https://www.baselland.ch/politik-und-behorden/direktionen/volkswirtschafts-und-gesundheitsdirektion/amt-fur-gesundheit/medizinische-dienste/kantonsarztlicher-dienst/aktuelles/covid-19-faelle-kanton-basel-landschaft',
+            /"(?<statisticUrl>https:\/\/www\.statistik\.bl\.ch\/files\/sites\/Grafiken\/COVID19\/\d+_COVID19_BL\.htm)"/
+        );
         const { groups } = await this.downloadAndMatch(
-            'https://www.statistik.bl.ch/files/sites/Grafiken/COVID19/20200331_COVID19_BL.htm',
-            /<pre id="data" style="display:none;">[^]*(?<updateDate>\d\d\-\d\d\-\d\d\d\d),(?<cumulatedInfected>\d+),(?<cumulatedDeaths>\d+)\s*<\/pre>/
+            statisticUrlMatches.groups.statisticUrl,
+            /<pre id="data" style="display:none;">[^]*(?<updateDate>\d\d\-\d\d\-\d\d\d\d),(?<cumulatedInfected>\d+),(?<cumulatedRecovered>\d+),(?<cumulatedDeaths>\d+)\s*<\/pre>/
         );
         return {
+            ...groups,
             NUTS: 'CH032',
-            updateDate: moment.tz(groups.updateDate, 'DD-MM-YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD'),
-            cumulatedInfected: this.parseNumber(groups.cumulatedInfected),
-            cumulatedDeaths: this.parseNumber(groups.cumulatedDeaths)
+            updateDate: moment.tz(groups.updateDate, 'DD-MM-YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD')
         };
     }
 }

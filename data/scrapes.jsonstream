@@ -8176,3 +8176,4 @@
 {"NUTS":"CH054","cumulatedInfected":19,"updateDate":"2020-04-02T06:00:00.000Z","scraper":"appenzell-innerrhoden","scrapedAt":"2020-04-02T07:41:21.594Z"}
 {"updateDate":"2020-04-01T22:00:00.000Z","cumulatedInfected":201,"cumulatedRecovered":51,"cumulatedDeaths":3,"NUTS":"DE271","scraper":"augsburg-stadt","scrapedAt":"2020-04-02T07:49:42.415Z"}
 {"updateDate":"2020-04-01","cumulatedInfected":146,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-02T08:03:10.741Z"}
+{"updateDate":"2020-04-01","cumulatedInfected":588,"cumulatedRecovered":249,"cumulatedDeaths":11,"NUTS":"CH032","scraper":"basel-landschaft","scrapedAt":"2020-04-02T08:27:28.421Z"}
