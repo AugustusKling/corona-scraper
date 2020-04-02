@@ -8329,3 +8329,4 @@
 {"NUTS":"CH012","cumulatedInfected":1145,"cumulatedDeaths":37,"updateDate":"2020-04-01","scraper":"valais","scrapedAt":"2020-04-02T08:58:35.582Z"}
 {"updateDate":"2020-04-01T16:45:00.000Z","cumulatedInfected":452,"cumulatedRecovered":51,"cumulatedDeaths":9,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-02T08:58:39.579Z"}
 {"NUTS":"CH066","updateDate":"2020-04-02T06:00:00.000Z","cumulatedInfected":131,"cumulatedRecovered":41,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-04-02T08:58:40.265Z"}
+{"cumulatedInfected":373,"updateDate":"2020-04-01T15:00:00.000Z","NUTS":"DE217","scraper":"dachau","scrapedAt":"2020-04-02T09:39:49.623Z"}
