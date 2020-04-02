@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://gd.zh.ch/internet/gesundheitsdirektion/de/themen/coronavirus.html',
-            /<h2>Aktuelle Situation im Kanton Zürich \((?<updateDate>.+?) Uhr\)<\/h2>\s*<p>Im Kanton Zürich sind zurzeit (?<cumulatedInfected>\d+) Personen positiv auf das Coronavirus getestet worden\.<\/p>\s*<p>(?<currentlyHospitalized>\d+) positiv Getestete befinden sich in Spitalbehandlung, davon werden \d+ künstlich beatmet.<\/p>\s*<p>Total (?<cumulatedDeaths>\d+) Todesfälle/
+            /<h2>Aktuelle Situation im Kanton Zürich \((?<updateDate>.+?) Uhr\)<\/h2>\s*<p>Zurzeit sind <strong>(?<cumulatedInfected>\d+)\s*<\/strong>\s*Personen mit Wohnsitz im Kanton Zürich positiv auf das Coronavirus getestet worden\.<\/p>\s*<p><strong>(?<currentlyHospitalized>\d+)<\/strong> positiv Getestete befinden sich in Spitalbehandlung[^]+?<\/p>\s*<p>Total <strong>(?<cumulatedDeaths>\d+)\s*<\/strong>\s*Todesfälle/
         );
         return {
             ...groups,
