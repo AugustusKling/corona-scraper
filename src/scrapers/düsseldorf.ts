@@ -4,8 +4,8 @@ import * as moment from 'moment-timezone';
 class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
-            'https://www.duesseldorf.de/aktuelles/news/',
-            /Mit Stand \w+, (?<updateDate>\d+\. \S+, \d+) Uhr, gibt es insgesamt (?<cumulatedInfected>\d+) Düsseldorferinnen und Düsseldorfer, bei denen eine Infektion mit dem Coronavirus diagnostiziert wurde/
+            'https://corona.duesseldorf.de/news',
+            /Mit Stand \w+, (?<updateDate>\d+\. \S+, \d+\.\d+) Uhr, wurde - seit dem 3\. März - bei insgesamt (?<cumulatedInfected>\d+) Düsseldorferinnen und Düsseldorfern eine Infektion mit dem Coronavirus diagnostiziert/
         );
         return {
             ...groups,
