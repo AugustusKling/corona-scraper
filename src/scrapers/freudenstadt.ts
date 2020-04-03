@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.landkreis-freudenstadt.de/Startseite/Aktuell/aktuelle+situation+im+landkreis+freudenstadt.html',
-            /Die Zahl der im Landkreis Freudenstadt auf den Coronavirus positiv getesteten Personen ist am \w+ \((?<updateDate>[^)]+)\) auf (?<cumulatedInfected>\d+) gestiegen/
+            /Nach Auswertung der am \w+, (?<updateDate>\d+\. \w+ \d{4}) eingegangenen Laborergebnisse wurden nun insgesamt (?<cumulatedInfected>\d+) Personen im Landkreis Freudenstadt positiv auf eine Infektion mit dem Coronavirus getestet/
         );
         return {
             ...groups,
