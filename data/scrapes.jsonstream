@@ -5356,3 +5356,4 @@
 {"updateDate":"2020-04-02","cumulatedInfected":213,"cumulatedQuarantined":393,"cumulatedRecovered":63,"NUTS":"DE125","scraper":"heidelberg","scrapedAt":"2020-04-03T10:57:40.601Z"}
 {"updateDate":"2020-04-02","cumulatedInfected":480,"currentlyHospitalizedIsolated":63,"currentlyIntensiveCare":12,"cumulatedDeaths":8,"NUTS":"CH055","currentlyHospitalized":75,"scraper":"sankt-gallen","scrapedAt":"2020-04-03T11:13:38.345Z"}
 {"updateDate":"2020-04-02","cumulatedInfected":47,"currentlyHospitalizedIsolated":15,"currentlyIntensiveCare":3,"cumulatedDeaths":1,"NUTS":"CH052","currentlyHospitalized":18,"scraper":"schaffhausen","scrapedAt":"2020-04-03T11:38:07.912Z"}
+{"updateDate":"2020-04-03T09:11:00.000Z","currentlyInfected":100,"currentlyHospitalized":16,"cumulatedInfected":132,"cumulatedRecovered":31,"cumulatedDeaths":1,"currentlyQuarantined":281,"NUTS":"DEA19","scraper":"solingen","scrapedAt":"2020-04-03T11:48:08.205Z"}
