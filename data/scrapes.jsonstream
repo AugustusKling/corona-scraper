@@ -5355,3 +5355,4 @@
 {"cumulatedInfected":652,"cumulatedRecovered":221,"cumulatedDeaths":12,"updateDate":"2020-04-02","NUTS":"DE128","scraper":"rhein-neckar-kreis","scrapedAt":"2020-04-03T10:48:07.781Z"}
 {"updateDate":"2020-04-02","cumulatedInfected":213,"cumulatedQuarantined":393,"cumulatedRecovered":63,"NUTS":"DE125","scraper":"heidelberg","scrapedAt":"2020-04-03T10:57:40.601Z"}
 {"updateDate":"2020-04-02","cumulatedInfected":480,"currentlyHospitalizedIsolated":63,"currentlyIntensiveCare":12,"cumulatedDeaths":8,"NUTS":"CH055","currentlyHospitalized":75,"scraper":"sankt-gallen","scrapedAt":"2020-04-03T11:13:38.345Z"}
+{"updateDate":"2020-04-02","cumulatedInfected":47,"currentlyHospitalizedIsolated":15,"currentlyIntensiveCare":3,"cumulatedDeaths":1,"NUTS":"CH052","currentlyHospitalized":18,"scraper":"schaffhausen","scrapedAt":"2020-04-03T11:38:07.912Z"}
