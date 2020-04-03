@@ -17,6 +17,8 @@ export abstract class Scraper {
             .replace(/&#(\d+);/g, (wholeMatch: string, group: string) => String.fromCharCode(parseInt(group, 10)))
             .replace(/&nbsp;/g, ' ').replace(new RegExp(decodeURIComponent('%C2%A0'), 'g'), ' ')
             .replace(/&auml;/g, 'ä')
+            .replace(/&aring;/g, 'å')
+            .replace(/&ouml;/g, 'ö')
             .replace(/&uuml;/g, 'ü');
         const matches = responseNormalized.match(matcher);
         if (matches) {
