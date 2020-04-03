@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://gesundheit.lu.ch/themen/Humanmedizin/Infektionskrankheiten/Coronavirus',
-            /Aktuelle Fallzahlen im Kanton Luzern\s*<\/strong>\(Stand: (?<updateDate>[^)]+) Uhr\)[^]*<tr(?:[^](?!<\/tr>))+Bestätigte Fälle:(?:[^](?!<\/tr>))+>(?<cumulatedInfected>\d+)<\/p>[^]*<tr(?:[^](?!<\/tr>))+Hospitalisiert:(?:[^](?!<\/tr>))+>(?<currentlyHospitalized>\d+)<\/p>[^]*<tr(?:[^](?!<\/tr>))+Intensivpflege:(?:[^](?!<\/tr>))+>(?<currentlyIntensiveCare>\d+)<\/p>[^]*<tr(?:[^](?!<\/tr>))+Todesfälle:(?:[^](?!<\/tr>))+>(?<cumulatedDeaths>\d+)<\/p>/
+            /Aktuelle Fallzahlen im Kanton Luzern\s*<\/strong>\(Stand: (?<updateDate>[^)]+) Uhr\)[^]*<tr(?:[^](?!<\/tr>))+Positiv getestet \(kumuliert\):(?:[^](?!<\/tr>))+>(?<cumulatedInfected>\d+)<\/p>[^]*<tr(?:[^](?!<\/tr>))+Hospitalisiert \(aktuell\):(?:[^](?!<\/tr>))+>(?<currentlyHospitalized>\d+)<\/p>[^]*<tr(?:[^](?!<\/tr>))+Intensivpflege \(aktuell\):(?:[^](?!<\/tr>))+>(?<currentlyIntensiveCare>\d+)<\/p>[^]*<tr(?:[^](?!<\/tr>))+Todesfälle \(kumuliert\):(?:[^](?!<\/tr>))+>(?<cumulatedDeaths>\d+)<\/p>/
         );
         return {
             ...groups,

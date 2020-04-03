@@ -5351,3 +5351,4 @@
 {"updateDate":"2020-04-03","cumulatedInfected":222,"NUTS":"DE12C","scraper":"freudenstadt","scrapedAt":"2020-04-03T10:21:18.988Z"}
 {"updateDate":"2020-04-03","cumulatedInfected":598,"currentlyHospitalized":60,"cumulatedDeaths":27,"NUTS":"CH056","scraper":"graubünden","scrapedAt":"2020-04-03T10:27:34.371Z"}
 {"updateDate":"2020-04-01T22:00:00.000Z","cumulatedInfected":247,"cumulatedRecovered":78,"currentlyHospitalized":22,"cumulatedDeaths":2,"NUTS":"DE138","scraper":"konstanz","scrapedAt":"2020-04-03T10:34:34.325Z"}
+{"updateDate":"2020-04-02T09:00:00.000Z","cumulatedInfected":422,"currentlyHospitalized":66,"currentlyIntensiveCare":11,"cumulatedDeaths":7,"NUTS":"CH061","scraper":"luzern","scrapedAt":"2020-04-03T10:37:55.902Z"}
