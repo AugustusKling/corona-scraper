@@ -5345,3 +5345,4 @@
 {"updateDate":"2020-04-02T15:00:00.000Z","cumulatedInfected":480,"cumulatedRecovered":60,"cumulatedDeaths":9,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-03T08:58:37.595Z"}
 {"NUTS":"CH066","updateDate":"2020-04-03T06:00:00.000Z","cumulatedInfected":138,"cumulatedRecovered":44,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-04-03T08:58:38.400Z"}
 {"updateDate":"2020-04-02T15:00:00.000Z","cumulatedInfected":2323,"currentlyHospitalized":200,"cumulatedDeaths":36,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-04-03T08:58:39.170Z"}
+{"NUTS":"CH054","cumulatedInfected":20,"updateDate":"2020-04-03T09:00:00.000Z","scraper":"appenzell-innerrhoden","scrapedAt":"2020-04-03T10:04:00.142Z"}
