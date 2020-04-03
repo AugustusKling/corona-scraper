@@ -3,16 +3,14 @@ import * as moment from 'moment-timezone';
 
 class ScraperImpl extends Scraper {
     public async get() {
-        const matches = await this.downloadAndMatch(
-            'https://www.gr.ch/DE/institutionen/verwaltung/djsg/ga/coronavirus/info/Seiten/Start.aspx',
-            /Fallzahlen\s+(.+?)<[^]+?Bestätigte Fälle: (\d+)[^]+?Personen in Spitalpflege: (\d+)[^]+?Verstorbene Personen: (\d+)/
+        const { groups } = await this.downloadAndMatch(
+            'https://www.gr.ch/DE/institutionen/verwaltung/djsg/ga/coronavirus/info/aktuell/Seiten/fallzahlen-erklaehrung.aspx',
+            /Fallzahlen\*?\s+(?<updateDate>\d\d\.\d\d\.\d\d\d\d)[^]+<div class="corona-message">Bestätigte Fälle: (?<cumulatedInfected>\d+)<br>Personen in Spitalpflege: (?<currentlyHospitalized>\d+)<br>Verstorbene Personen: (?<cumulatedDeaths>\d+)/
         );
         return {
+            ...groups,
             NUTS: 'CH056',
-            updateDate: moment.tz(matches[1], 'DD.MM.YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD'),
-            cumulatedInfected: parseInt(matches[2], 10),
-            currentlyHospitalized: parseInt(matches[3], 10),
-            cumulatedDeaths: parseInt(matches[4], 10)
+            updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD')
         };
     }
 }
