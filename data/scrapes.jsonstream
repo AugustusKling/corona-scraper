@@ -5350,3 +5350,4 @@
 {"NUTS":"DE132","cumulatedInfected":614,"cumulatedDeaths":12,"updateDate":"2020-04-03T05:00:00.000Z","scraper":"breisgau-hochschwarzwald","scrapedAt":"2020-04-03T10:10:55.148Z"}
 {"updateDate":"2020-04-03","cumulatedInfected":222,"NUTS":"DE12C","scraper":"freudenstadt","scrapedAt":"2020-04-03T10:21:18.988Z"}
 {"updateDate":"2020-04-03","cumulatedInfected":598,"currentlyHospitalized":60,"cumulatedDeaths":27,"NUTS":"CH056","scraper":"graubünden","scrapedAt":"2020-04-03T10:27:34.371Z"}
+{"updateDate":"2020-04-01T22:00:00.000Z","cumulatedInfected":247,"cumulatedRecovered":78,"currentlyHospitalized":22,"cumulatedDeaths":2,"NUTS":"DE138","scraper":"konstanz","scrapedAt":"2020-04-03T10:34:34.325Z"}
