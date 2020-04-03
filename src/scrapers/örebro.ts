@@ -9,7 +9,7 @@ class ScraperImpl extends Scraper {
         );
         return {
             ...groups,
-            NUTS: 'SE024',
+            NUTS: 'SE124',
             updateDate: moment.tz(groups.updateDate, 'D MMM', 'sv', 'Europe/Berlin').format('YYYY-MM-DD')
         };
     }

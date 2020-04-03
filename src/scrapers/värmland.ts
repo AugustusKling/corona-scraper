@@ -9,7 +9,7 @@ class ScraperImpl extends Scraper {
         );
         return {
             ...groups,
-            NUTS: 'SE061',
+            NUTS: 'SE311',
             updateDate: moment.tz(groups.updateDate, 'D MMM[ klockan ] HH.mm', 'sv', 'Europe/Berlin').toISOString()
         };
     }

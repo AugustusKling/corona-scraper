@@ -5532,5 +5532,5 @@
 {"updateDate":"2020-04-02T15:00:00.000Z","cumulatedInfected":480,"cumulatedRecovered":60,"cumulatedDeaths":9,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-03T12:58:33.077Z"}
 {"NUTS":"CH066","updateDate":"2020-04-03T06:00:00.000Z","cumulatedInfected":138,"cumulatedRecovered":44,"cumulatedDeaths":1,"scraper":"zug","scrapedAt":"2020-04-03T12:58:33.849Z"}
 {"updateDate":"2020-04-02T15:00:00.000Z","cumulatedInfected":2323,"currentlyHospitalized":200,"cumulatedDeaths":36,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-04-03T12:58:34.592Z"}
-{"cumulatedInfected":52,"cumulatedTested":886,"cumulatedDeaths":1,"currentlyHospitalized":4,"updateDate":"2020-04-03T07:31:00.000Z","NUTS":"SE061","scraper":"värmland","scrapedAt":"2020-04-03T13:52:17.143Z"}
-{"updateDate":"2020-04-03","cumulatedInfected":187,"currentlyHospitalized":26,"currentlyIntensiveCare":7,"NUTS":"SE024","scraper":"örebro","scrapedAt":"2020-04-03T13:57:18.473Z"}
+{"cumulatedInfected":52,"cumulatedTested":886,"cumulatedDeaths":1,"currentlyHospitalized":4,"updateDate":"2020-04-03T07:31:00.000Z","NUTS":"SE311","scraper":"värmland","scrapedAt":"2020-04-03T13:52:17.143Z"}
+{"updateDate":"2020-04-03","cumulatedInfected":187,"currentlyHospitalized":26,"currentlyIntensiveCare":7,"NUTS":"SE124","scraper":"örebro","scrapedAt":"2020-04-03T13:57:18.473Z"}
