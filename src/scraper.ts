@@ -44,5 +44,5 @@ export function parseNumber(value: string | number): number {
     if (typeof(value) === 'number') {
         return value;
     }
-    return parseInt(value.replace(/[.']/g, ''), 10);
+    return parseInt(value.replace(/[.' ]/g, ''), 10);
 }
