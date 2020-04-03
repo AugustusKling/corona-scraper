@@ -5354,3 +5354,4 @@
 {"updateDate":"2020-04-02T09:00:00.000Z","cumulatedInfected":422,"currentlyHospitalized":66,"currentlyIntensiveCare":11,"cumulatedDeaths":7,"NUTS":"CH061","scraper":"luzern","scrapedAt":"2020-04-03T10:37:55.902Z"}
 {"cumulatedInfected":652,"cumulatedRecovered":221,"cumulatedDeaths":12,"updateDate":"2020-04-02","NUTS":"DE128","scraper":"rhein-neckar-kreis","scrapedAt":"2020-04-03T10:48:07.781Z"}
 {"updateDate":"2020-04-02","cumulatedInfected":213,"cumulatedQuarantined":393,"cumulatedRecovered":63,"NUTS":"DE125","scraper":"heidelberg","scrapedAt":"2020-04-03T10:57:40.601Z"}
+{"updateDate":"2020-04-02","cumulatedInfected":480,"currentlyHospitalizedIsolated":63,"currentlyIntensiveCare":12,"cumulatedDeaths":8,"NUTS":"CH055","currentlyHospitalized":75,"scraper":"sankt-gallen","scrapedAt":"2020-04-03T11:13:38.345Z"}
