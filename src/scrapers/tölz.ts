@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.lra-toelz.de/pressemitteilungen',
-            /<li>Pressemitteilung: (?<updateDate>\d\d\.\d\d\.\d\d\d\d)<\/li>(?:[^](?!<\/a>))+>(?:(?<cumulatedInfected1>\d+) infizierte Personen[^<]+|Zahl der Infizierten steigt auf (?<cumulatedInfected2>\d+)|(?<cumulatedInfected3>\d+) mit dem Coronavirus Infizierte.+)<\/a>/
+            /<li>Pressemitteilung: (?<updateDate>\d\d\.\d\d\.\d\d\d\d)<\/li>(?:[^](?!<\/a>))+>(?:(?<cumulatedInfected1>\d+) infizierte Personen[^<]+|Zahl der Infizierten steigt auf (?<cumulatedInfected2>\d+).+?|(?<cumulatedInfected3>\d+) mit dem Coronavirus Infizierte.+?)<\/a>/
         );
         return {
             NUTS: 'DE216',
