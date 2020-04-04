@@ -6241,3 +6241,4 @@
 {"updateDate":"2020-04-03T13:00:00.000Z","cumulatedInfected":2452,"currentlyHospitalized":207,"cumulatedDeaths":38,"NUTS":"CH040","scraper":"zürich","scrapedAt":"2020-04-04T04:58:34.935Z"}
 {"updateDate":"2020-04-03","cumulatedInfected":187,"currentlyHospitalized":26,"currentlyIntensiveCare":7,"NUTS":"SE124","scraper":"örebro","scrapedAt":"2020-04-04T04:58:36.161Z"}
 {"updateDate":"2020-04-03T10:30:00.000Z","cumulatedDeaths":19,"currentlyHospitalized":114,"cumulatedInfected":597,"NUTS":"SE123","scraper":"östergötland","scrapedAt":"2020-04-04T04:58:38.115Z"}
+{"updateDate":"2020-04-03T06:00:00.000Z","cumulatedInfected":65,"cumulatedDeaths":3,"NUTS":"CH053","scraper":"appenzell-ausserrhoden","scrapedAt":"2020-04-04T08:55:43.919Z"}
