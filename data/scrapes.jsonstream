@@ -6784,3 +6784,4 @@
 {"updateDate":"2020-04-04","cumulatedInfected":398,"cumulatedDeaths":20,"NUTS":"DE133","scraper":"emmendingen","scrapedAt":"2020-04-04T19:51:06.226Z"}
 {"cumulatedInfected":807,"updateDate":"2020-04-01","NUTS":"DE142","scraper":"tübingen","scrapedAt":"2020-04-04T19:59:27.466Z"}
 {"updateDate":"2020-04-04","cumulatedInfected":1117,"cumulatedDeaths":27,"cumulatedRecovered":397,"NUTS":"DE113","scraper":"esslingen","scrapedAt":"2020-04-04T20:08:26.617Z"}
+{"updateDate":"2020-04-03","cumulatedInfected":225,"NUTS":"DE135","scraper":"rottweil","scrapedAt":"2020-04-04T20:37:43.956Z"}
