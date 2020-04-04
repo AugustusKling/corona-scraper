@@ -6244,3 +6244,4 @@
 {"updateDate":"2020-04-03T06:00:00.000Z","cumulatedInfected":65,"cumulatedDeaths":3,"NUTS":"CH053","scraper":"appenzell-ausserrhoden","scrapedAt":"2020-04-04T08:55:43.919Z"}
 {"NUTS":"DE216","updateDate":"2020-04-03","cumulatedInfected":237,"scraper":"tölz","scrapedAt":"2020-04-04T08:58:16.735Z"}
 {"updateDate":"2020-04-03","cumulatedInfected":47,"currentlyHospitalizedIsolated":6,"currentlyIntensiveCare":3,"cumulatedDeaths":1,"NUTS":"CH052","currentlyHospitalized":9,"scraper":"schaffhausen","scrapedAt":"2020-04-04T09:23:17.871Z"}
+{"NUTS":"CH012","cumulatedInfected":1273,"cumulatedDeaths":45,"updateDate":"2020-04-03","scraper":"valais","scrapedAt":"2020-04-04T09:25:36.935Z"}

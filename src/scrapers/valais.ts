@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.vs.ch/de/web/coronavirus/info',
-            />(?<updateDate>\d\d\.\d\d.\d\d\d\d): Derzeit gibt es (?<cumulatedInfected>\d+) bestätigte Fälle von Coronavirus-Infektionen im Kanton. Insgesamt hat das Virus bisher den Tod von (?<cumulatedDeaths>\d+) Personen im Wallis verursacht/
+            />(?<updateDate>\d\d\.\d\d.\d\d\d\d): Derzeit gibt es (?<cumulatedInfected>\d+) bestätigte Fälle von Coronavirus-Infektionen im Kanton. Insgesamt hat das Virus bisher den Tod von (?<cumulatedDeaths>\d+)(?: \(und nicht \d+ wie hier zuvor irrtümlich veröffentlicht\)) Personen im Wallis verursacht/
         );
         return {
             NUTS: 'CH012',
