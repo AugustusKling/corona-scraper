@@ -6420,3 +6420,5 @@
 {"updateDate":"2020-04-03","cumulatedInfected":47,"currentlyHospitalizedIsolated":6,"currentlyIntensiveCare":3,"cumulatedDeaths":1,"NUTS":"CH052","currentlyHospitalized":9,"scraper":"schaffhausen","scrapedAt":"2020-04-04T09:23:17.871Z"}
 {"NUTS":"CH012","cumulatedInfected":1273,"cumulatedDeaths":45,"updateDate":"2020-04-03","scraper":"valais","scrapedAt":"2020-04-04T09:25:36.935Z"}
 {"cumulatedInfected":161,"currentlyHospitalized":14,"cumulatedRecovered":35,"updateDate":"2020-04-03T11:00:00.000Z","NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-04-04T09:30:38.167Z"}
+{"updateDate":"2020-04-02","cumulatedInfected":31,"NUTS":"DE274","scraper":"memmingen","scrapedAt":"2020-04-04T09:47:55.181Z"}
+{"updateDate":"2020-04-03","cumulatedInfected":36,"NUTS":"DE274","scraper":"memmingen","scrapedAt":"2020-04-04T09:48:03.300Z"}
