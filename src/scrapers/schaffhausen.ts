@@ -16,7 +16,7 @@ class ScraperImpl extends Scraper {
             .replace(/&uuml;/g, 'ü');
         
         const { groups } = html.match(
-            /<p class="post_text">Im Kanton Schaffhausen gibt es aktuell \(Stand (?<updateDate>[^)]+)\):\s*<\/p>\s*<p class="post_text"><strong>Anzahl Infizierte Fälle \(kumuliert\): (?<cumulatedInfected>\d+)<\/strong><\/p>\s*<p class="post_text"><strong>Anzahl Hospitalisationen Isolation \(aktuell\): (?<currentlyHospitalizedIsolated>\d+)<\/strong><\/p>\s*<p class="post_text"><strong>Anzahl Hospitalisationen Intensiv \(aktuell\): (?<currentlyIntensiveCare>\d+)<\/strong><\/p>\s*<p class="post_text"><strong>Verstorbene \(kummuliert\): (?<cumulatedDeaths>\d+)<\/strong><\/p>/
+            /<p class="post_text">Im Kanton Schaffhausen gibt es aktuell \(Stand (?<updateDate>[^)]+)\):\s*<\/p>\s*<p class="post_text"><strong>Anzahl Infizierte Fälle \(kumuliert\): (?<cumulatedInfected>\d+)<\/strong><\/p>\s*<p class="post_text"><strong>Anzahl Hospitalisationen Isolation \(aktuell\): (?<currentlyHospitalizedIsolated>\d+)<\/strong><\/p>\s*<p class="post_text"><strong>Anzahl Hospitalisationen Intensiv \(aktuell\): (?<currentlyIntensiveCare>\d+)<\/strong><\/p>\s*<p class="post_text"><strong>Verstorbene \(kummuliert\): (?<cumulatedDeaths>\d+)/
         );
         return {
             ...groups,
