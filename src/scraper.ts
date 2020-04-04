@@ -2,6 +2,15 @@ import fetch from 'node-fetch';
 const Iconv = require('iconv').Iconv;
 const Buffer = require('buffer').Buffer;
 import { Moment } from 'moment';
+const { createWorker } = require('tesseract.js');
+const sharp = require('sharp');
+
+export interface Region {
+    minX: number;
+    minY: number;
+    maxX: number;
+    maxY: number;
+}
 
 export abstract class Scraper {
 
@@ -29,6 +38,36 @@ export abstract class Scraper {
         } else {
             throw new Error('Failed to extract.');
         }
+    }
+    
+    protected async downloadAndOcr<regionNames extends string>(url: string, regions: Record<regionNames, Region>): Promise<Record<regionNames, string>> {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Failed to download: ' + response.statusText);
+        }
+        const image = await sharp(Buffer.from(await response.arrayBuffer())).threshold(40).toBuffer();
+        
+        const worker = createWorker();
+
+        await worker.load();
+        await worker.loadLanguage('eng');
+        await worker.initialize('eng');
+        await worker.setParameters({
+            //tessedit_char_whitelist: '<0123456789'
+        });
+        const values = {} as Record<regionNames, string>;
+        for (const [regionName, region] of (Object.entries(regions) as [regionNames, Region][])) {
+            const rectangle = {
+                left: region.minX,
+                top: region.minY,
+                width: region.maxX - region.minX,
+                height: region.maxY - region.minY
+            };
+            const { data: { text } } = await worker.recognize(image, { rectangle });
+            values[regionName] = text.trim();
+        }
+        await worker.terminate();
+        return values;
     }
     
     protected parseNumber(value: string): number {

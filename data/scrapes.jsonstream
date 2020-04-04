@@ -6422,3 +6422,4 @@
 {"cumulatedInfected":161,"currentlyHospitalized":14,"cumulatedRecovered":35,"updateDate":"2020-04-03T11:00:00.000Z","NUTS":"DE13A","scraper":"waldshut","scrapedAt":"2020-04-04T09:30:38.167Z"}
 {"updateDate":"2020-04-02","cumulatedInfected":31,"NUTS":"DE274","scraper":"memmingen","scrapedAt":"2020-04-04T09:47:55.181Z"}
 {"updateDate":"2020-04-03","cumulatedInfected":36,"NUTS":"DE274","scraper":"memmingen","scrapedAt":"2020-04-04T09:48:03.300Z"}
+{"NUTS":"DE119","updateDate":"2020-04-03","cumulatedInfected":518,"scraper":"hohenlohekreis","scrapedAt":"2020-04-04T11:59:21.087Z"}
