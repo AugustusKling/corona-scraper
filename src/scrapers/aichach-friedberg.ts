@@ -5,9 +5,9 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://lra-aic-fdb.de/landratsamt/fachbereiche/abteilung-3-oeffentliche-sicherheit/gesundheitsamt/informationen-zum-coronavirus',
-            /\w+, (?<updateDate>\d\d\.\d\d\.\d\d\d\d)[^]{1,50}?Aktuell\s+(?<cumulatedInfected>\d+)(?:\s+registrierte)?\s+Infektionsfälle/i
+            /\w+,\s*(?<updateDate>\d\d\.\d\d\.\d\d\d\d)<\/p>(?:[^](?!<\/p>))+?(?<cumulatedInfected>\d+)(?:\s+registrierte)?\s+(?:Corona-)?Infektionsfälle/i
         );
-        return {
+            return {
             ...groups,
             NUTS: 'DE275',
             updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD')
