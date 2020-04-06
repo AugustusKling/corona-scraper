@@ -8615,3 +8615,5 @@
 {"updateDate":"2020-04-03T10:30:00.000Z","cumulatedDeaths":19,"currentlyHospitalized":114,"cumulatedInfected":597,"NUTS":"SE123","scraper":"östergötland","scrapedAt":"2020-04-06T08:59:32.844Z"}
 {"cumulatedInfected":417,"cumulatedRecoved":119,"NUTS":"DE148","scraper":"ravensburg","scrapedAt":"2020-04-06T12:38:49.352Z"}
 {"updateDate":"2020-04-05","cumulatedInfected":171,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-06T13:09:41.004Z"}
+{"NUTS":"DE145","cumulatedInfected":366,"updateDate":"2020-04-04","population":196000,"scraper":"alb-donau-kreis","scrapedAt":"2020-04-06T13:13:10.213Z"}
+{"NUTS":"DE144","cumulatedInfected":183,"updateDate":"2020-04-04","population":126000,"scraper":"alb-donau-kreis","scrapedAt":"2020-04-06T13:13:10.213Z"}
