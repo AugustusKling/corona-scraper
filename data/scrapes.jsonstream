@@ -8797,3 +8797,4 @@
 {"updateDate":"2020-04-05","cumulatedInfected":171,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-06T13:09:41.004Z"}
 {"NUTS":"DE145","cumulatedInfected":366,"updateDate":"2020-04-04","population":196000,"scraper":"alb-donau-kreis","scrapedAt":"2020-04-06T13:13:10.213Z"}
 {"NUTS":"DE144","cumulatedInfected":183,"updateDate":"2020-04-04","population":126000,"scraper":"alb-donau-kreis","scrapedAt":"2020-04-06T13:13:10.213Z"}
+{"cumulatedDeaths":4,"currentlyHospitalized":21,"cumulatedInfected":238,"cumulatedRecovered":134,"currentlyQuarantined":375,"cumulatedReleasedFromQuarantine":916,"NUTS":"DE147","cumulatedQuarantined":1291,"scraper":"bodenseekreis","scrapedAt":"2020-04-06T13:40:18.018Z"}
