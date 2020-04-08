@@ -10566,3 +10566,4 @@
 {"NUTS":"DE146","updateDate":"2020-04-07T15:00:00.000Z","cumulatedInfected":361,"scraper":"biberach","scrapedAt":"2020-04-08T08:20:46.397Z"}
 {"updateDate":"2020-04-07","cumulatedInfected":1013,"currentlyInfected":692,"cumulatedRecovered":302,"cumulatedDeaths":19,"NUTS":"DE112","scraper":"böblingen","scrapedAt":"2020-04-08T08:27:00.329Z"}
 {"updateDate":"2020-04-07","cumulatedInfected":442,"currentlyHospitalized":28,"currentlyIntensiveCare":9,"NUTS":"DE21A","scraper":"erding","scrapedAt":"2020-04-08T08:35:38.667Z"}
+{"updateDate":"2020-04-07","cumulatedInfected":612,"NUTS":"DE21C","scraper":"fürstenfeldbruck","scrapedAt":"2020-04-08T08:40:06.815Z"}
