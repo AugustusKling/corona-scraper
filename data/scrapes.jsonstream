@@ -10564,3 +10564,4 @@
 {"NUTS":"DE216","updateDate":"2020-04-07","cumulatedInfected":288,"scraper":"tölz","scrapedAt":"2020-04-08T08:11:49.212Z"}
 {"updateDate":"2020-04-07T06:00:00.000Z","cumulatedInfected":1228,"currentlyHospitalized":122,"currentlyIntensiveCare":34,"cumulatedDeaths":33,"NUTS":"CH021","scraper":"bern","scrapedAt":"2020-04-08T08:17:29.444Z"}
 {"NUTS":"DE146","updateDate":"2020-04-07T15:00:00.000Z","cumulatedInfected":361,"scraper":"biberach","scrapedAt":"2020-04-08T08:20:46.397Z"}
+{"updateDate":"2020-04-07","cumulatedInfected":1013,"currentlyInfected":692,"cumulatedRecovered":302,"cumulatedDeaths":19,"NUTS":"DE112","scraper":"böblingen","scrapedAt":"2020-04-08T08:27:00.329Z"}

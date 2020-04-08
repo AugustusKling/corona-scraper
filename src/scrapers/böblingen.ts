@@ -5,12 +5,12 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.lrabb.de/start/Aktuelles/coronavirus.html',
-            /(?<cumulatedInfected>\d+) Erkrankte<br>(?<cumulatedDeaths>\d+) Todesfälle<br>(?<cumulatedRecovered>\d+) geheilte Personen<br>\(Stand: (?<updateDate>[^)]+)\)/
+            /Lagebericht vom (?<updateDate>[^<]+)<\/h1>[^]{0,100}<strong>Insgesamt (?<cumulatedInfected>\d+) Fälle<\/strong><br><strong>Davon (?<currentlyInfected>\d+) aktive Erkrankungen<\/strong><br><strong>(?<cumulatedRecovered>\d+) geheilte Fälle<\/strong><br><strong>(?<cumulatedDeaths>\d+) Todesfälle/
         );
         return {
             ...groups,
             NUTS: 'DE112',
-            updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY HH:mm', 'de', 'Europe/Berlin').toISOString()
+            updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY', 'de', 'Europe/Berlin').format('YYYY-MM-DD')
         };
     }
 }
