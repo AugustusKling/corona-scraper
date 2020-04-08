@@ -5,12 +5,12 @@ class Konstanz extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.lrakn.de/,Lde/service-und-verwaltung/aemter/gesundheit+und+versorgung/coronavirus',
-            /Übersicht der aktuellen Lage im Landkreis Konstanz \(Stand \w+,\s*(?<updateDate>\d\d\.\d\d\.\d\d\d\d)\)[^]+?<td><strong>Gesamtanzahl Infizierte<\/strong><\/td>\s*<td><strong>(?<cumulatedInfected>\d+).{0,20}?<\/strong><\/td>[^]+?genesene Personen<\/td>\s*<td>(?<cumulatedRecovered>\d+)[^]+?in stationärer Behandlung<\/td>\s*<td>(?<currentlyHospitalized>\d+).{0,20}?<\/td>[^]+?verstorbene Personen<\/td>\s*<td>(?<cumulatedDeaths>\d+).{0,20}?<\/td>/
+            /<img alt="Infizierte gesamt (?<cumulatedInfected>\d+), Genesene (?<cumulatedRecovered>\d+), stationär Behandelte (?<currentlyHospitalized>\d+), Verstorbene (?<cumulatedDeaths>\d+)"[^<]*><span class="zoomIcon"><\/span><\/a><\/div>\s*<figcaption[^<]*><span class="align-left">Aktuelle Entwicklung zum Stand (?<updateDate>\d+\. \w+ \d\d\d\d um \d+) Uhr/
         );
         return {
             ...groups,
             NUTS: 'DE138',
-            updateDate: moment.tz(groups.updateDate, 'DD.MM.YYYY', 'de', 'Europe/Berlin').toISOString()
+            updateDate: moment.tz(groups.updateDate, 'D. MMM YYYY[ um ]HH', 'de', 'Europe/Berlin').toISOString()
         };
     }
 }
