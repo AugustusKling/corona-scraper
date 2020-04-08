@@ -9,7 +9,7 @@ class ScraperImpl extends Scraper {
         );
         const { groups } = await this.downloadAndMatch(
             'https://www.landkreis-erding.de' + pressrelease.groups.url,
-            /<h1[^>]*>[^<]*Sachstand (?<updateDate>\d\d\.\d\d\.\d\d\d\d)[^<]*<\/h1>[^]+?Zahl der bestätigten Covid-19-Fälle im Landkreis Erding von \d+ auf (?<cumulatedInfected>\d+) Fälle angewachsen[^]+?Im Klinikum Landkreis Erding liegen derzeit (?<currentlyHospitalized>\d+) Covid-19-Patienten; \d+ werden auf der Isolierstation behandelt, (?<currentlyIntensiveCare>\d+) auf der Intensiv-Isolierstation/
+            /<h1[^>]*>[^<]*Sachstand (?<updateDate>\d\d\.\d\d\.\d\d\d\d)[^<]*<\/h1>[^]+?Zahl der bestätigten Covid-19-Fälle im Landkreis Erding von \d+ (?:Fälle um \d+ )?auf (?<cumulatedInfected>\d+) Fälle angewachsen[^]+?Im Klinikum Landkreis Erding liegen derzeit (?<currentlyHospitalized>\d+) Covid-19-Patienten; \d+ werden auf der Isolierstation behandelt, (?<currentlyIntensiveCare>\d+) auf der Intensiv-Isolierstation/
         );
         return {
             ...groups,
