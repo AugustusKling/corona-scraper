@@ -5,7 +5,7 @@ class ScraperImpl extends Scraper {
     public async get() {
         const { groups } = await this.downloadAndMatch(
             'https://www.besondere-lage.sites.be.ch/besondere-lage_sites/de/index/corona/index.html',
-            /<tr>\s*<td headers="th_top_5147_1A"><strong>(?<updateDate>\d\d\.\d\d\.\d\d<br \/>\s*<\/strong>\s*\d\d\.\d\d)\s*h<\/td>\s*<td headers="th_top_5147_2A">(?<cumulatedInfected>\d+)<\/td>\s*<td headers="th_top_5147_3A">(?<currentlyHospitalized>\d+)<\/td>\s*<td headers="th_top_5147_4A">\d+<\/td>\s*<td headers="th_top_5147_5A">(?<currentlyIntensiveCare>\d+)<\/td>\s*<td headers="th_top_5147_6A">\d+<\/td>\s*<td headers="th_top_5147_7A">(?<cumulatedDeaths>\d+)<\/td>\s*<\/tr>/
+            /<tr>\s*<td headers="th_top_5147_1A"><strong>(?<updateDate>\d\d\.\d\d\.\d\d(?:<\/strong>)?<br \/>\s*(?:<\/strong>)?\s*\d\d\.\d\d)\s*h<\/td>\s*<td headers="th_top_5147_2A">(?<cumulatedInfected>\d+)<\/td>\s*<td headers="th_top_5147_3A">(?<currentlyHospitalized>\d+)<\/td>\s*<td headers="th_top_5147_4A">\d+<\/td>\s*<td headers="th_top_5147_5A">(?<currentlyIntensiveCare>\d+)<\/td>\s*<td headers="th_top_5147_6A">\d+<\/td>\s*<td headers="th_top_5147_7A">(?<cumulatedDeaths>\d+)<\/td>\s*<\/tr>/
         );
         return {
             ...groups,
