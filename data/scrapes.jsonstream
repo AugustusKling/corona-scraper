@@ -10563,3 +10563,4 @@
 {"updateDate":"2020-04-07","currentlyInfected":90,"cumulatedInfected":182,"cumulatedRecovered":92,"cumulatedHospitalized":19,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-08T07:59:22.015Z"}
 {"NUTS":"DE216","updateDate":"2020-04-07","cumulatedInfected":288,"scraper":"tölz","scrapedAt":"2020-04-08T08:11:49.212Z"}
 {"updateDate":"2020-04-07T06:00:00.000Z","cumulatedInfected":1228,"currentlyHospitalized":122,"currentlyIntensiveCare":34,"cumulatedDeaths":33,"NUTS":"CH021","scraper":"bern","scrapedAt":"2020-04-08T08:17:29.444Z"}
+{"NUTS":"DE146","updateDate":"2020-04-07T15:00:00.000Z","cumulatedInfected":361,"scraper":"biberach","scrapedAt":"2020-04-08T08:20:46.397Z"}
