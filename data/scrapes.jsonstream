@@ -10560,3 +10560,4 @@
 {"updateDate":"2020-04-07T16:00:00.000Z","cumulatedInfected":617,"cumulatedRecovered":105,"cumulatedDeaths":22,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-08T04:59:05.473Z"}
 {"NUTS":"CH066","updateDate":"2020-04-07T06:00:00.000Z","cumulatedInfected":157,"cumulatedRecovered":54,"cumulatedDeaths":3,"scraper":"zug","scrapedAt":"2020-04-08T04:59:06.170Z"}
 {"updateDate":"2020-04-07","cumulatedInfected":275,"currentlyHospitalized":41,"currentlyIntensiveCare":15,"NUTS":"SE124","scraper":"örebro","scrapedAt":"2020-04-08T04:59:07.917Z"}
+{"updateDate":"2020-04-07","currentlyInfected":90,"cumulatedInfected":182,"cumulatedRecovered":92,"cumulatedHospitalized":19,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-08T07:59:22.015Z"}
