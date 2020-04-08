@@ -10569,3 +10569,4 @@
 {"updateDate":"2020-04-07","cumulatedInfected":612,"NUTS":"DE21C","scraper":"fürstenfeldbruck","scrapedAt":"2020-04-08T08:40:06.815Z"}
 {"updateDate":"2020-04-07","cumulatedInfected":668,"currentlyHospitalized":49,"cumulatedDeaths":34,"NUTS":"CH056","scraper":"graubünden","scrapedAt":"2020-04-08T08:41:38.662Z"}
 {"updateDate":"2020-04-07","cumulatedInfected":246,"cumulatedQuarantined":348,"cumulatedRecovered":110,"NUTS":"DE125","scraper":"heidelberg","scrapedAt":"2020-04-08T08:44:23.055Z"}
+{"updateDate":"2020-04-07T13:00:00.000Z","cumulatedInfected":1495,"cumulatedRecovered":919,"cumulatedDeaths":47,"currentlyInfected":529,"NUTS":"DEA29","scraper":"heinsberg","scrapedAt":"2020-04-08T08:52:36.615Z"}
