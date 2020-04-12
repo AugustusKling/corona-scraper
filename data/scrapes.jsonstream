@@ -14660,3 +14660,4 @@
 {"updateDate":"2020-04-09","currentlyInfected":98,"cumulatedInfected":218,"cumulatedRecovered":112,"cumulatedHospitalized":18,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-12T11:41:57.104Z"}
 {"NUTS":"DE216","updateDate":"2020-04-10","cumulatedInfected":330,"scraper":"tölz","scrapedAt":"2020-04-12T11:49:41.231Z"}
 {"cumulatedDeaths":6,"currentlyHospitalized":14,"cumulatedInfected":265,"cumulatedRecovered":214,"currentlyQuarantined":238,"cumulatedReleasedFromQuarantine":1155,"NUTS":"DE147","cumulatedQuarantined":1393,"scraper":"bodenseekreis","scrapedAt":"2020-04-12T11:54:52.427Z"}
+{"NUTS":"DE12A","updateDate":"2020-04-11T18:30:00.000Z","cumulatedInfected":539,"cumulatedRecovered":284,"cumulatedDeaths":15,"scraper":"calw","scrapedAt":"2020-04-12T12:45:55.544Z"}
