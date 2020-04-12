@@ -14657,3 +14657,4 @@
 {"updateDate":"2020-04-09T07:00:00.000Z","cumulatedInfected":490,"currentlyInfected":312,"cumulatedRecovered":167,"cumulatedDeaths":11,"currentlyQuarantined":1321,"NUTS":"DEA1A","scraper":"wuppertal","scrapedAt":"2020-04-12T08:59:05.593Z"}
 {"updateDate":"2020-04-11T14:00:00.000Z","cumulatedInfected":717,"cumulatedRecovered":224,"cumulatedDeaths":29,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-12T08:59:07.185Z"}
 {"NUTS":"CH066","updateDate":"2020-04-12T08:00:00.000Z","cumulatedInfected":168,"cumulatedRecovered":80,"cumulatedDeaths":5,"scraper":"zug","scrapedAt":"2020-04-12T08:59:09.262Z"}
+{"updateDate":"2020-04-09","currentlyInfected":98,"cumulatedInfected":218,"cumulatedRecovered":112,"cumulatedHospitalized":18,"NUTS":"DE275","scraper":"aichach-friedberg","scrapedAt":"2020-04-12T11:41:57.104Z"}
