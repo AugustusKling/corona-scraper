@@ -3561,3 +3561,4 @@
 {"updateDate":"2020-04-11T14:00:00.000Z","cumulatedInfected":717,"cumulatedRecovered":224,"cumulatedDeaths":29,"NUTS":"DE143","scraper":"zollernalbkreis","scrapedAt":"2020-04-12T12:59:00.361Z"}
 {"NUTS":"CH066","updateDate":"2020-04-12T08:00:00.000Z","cumulatedInfected":168,"cumulatedRecovered":80,"cumulatedDeaths":5,"scraper":"zug","scrapedAt":"2020-04-12T12:59:01.152Z"}
 {"updateDate":"2020-04-11","cumulatedInfected":144,"cumulatedRecovered":59,"NUTS":"DEA18","scraper":"remscheid","scrapedAt":"2020-04-12T13:07:22.238Z"}
+{"updateDate":"2020-04-12T11:36:00.000Z","currentlyInfected":93,"currentlyHospitalized":23,"cumulatedInfected":183,"cumulatedRecovered":91,"currentlyQuarantined":200,"NUTS":"DEA19","scraper":"solingen","scrapedAt":"2020-04-12T13:12:57.740Z"}
