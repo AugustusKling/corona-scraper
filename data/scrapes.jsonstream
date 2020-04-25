@@ -15889,3 +15889,4 @@
 {"NUTS":"CH062","updateDate":"2020-04-24","cumulatedInfected":78,"cumulatedHospitalized":3,"cumulatedDeaths":5,"cumulatedRecovered":69,"scraper":"uri","scrapedAt":"2020-04-25T08:59:04.291Z"}
 {"updateDate":"2020-04-03T12:00:00.000Z","cumulatedInfected":509,"currentlyHospitalized":92,"currentlyIntensiveCare":40,"NUTS":"SE232","scraper":"västra-götaland","scrapedAt":"2020-04-25T08:59:09.063Z"}
 {"NUTS":"CH066","updateDate":"2020-04-25T07:00:00.000Z","cumulatedInfected":181,"cumulatedRecovered":133,"cumulatedDeaths":8,"scraper":"zug","scrapedAt":"2020-04-25T08:59:12.772Z"}
+{"cumulatedInfected":540,"updateDate":"2020-04-24","cumulatedRecoved":344,"cumulatedDeaths":6,"NUTS":"DE148","scraper":"ravensburg","scrapedAt":"2020-04-25T11:38:56.072Z"}
