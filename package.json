@@ -18,7 +18,7 @@
     "@types/iconv": "^2.1.16",
     "csv-parse": "^4.8.8",
     "iconv": "^2.3.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.28",
     "node-fetch": "^2.6.0",
     "sharp": "^0.25.2",
