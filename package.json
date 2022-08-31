@@ -19,7 +19,7 @@
     "csv-parse": "^4.8.8",
     "iconv": "^2.3.5",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.28",
+    "moment-timezone": "^0.5.35",
     "node-fetch": "^2.6.0",
     "sharp": "^0.25.2",
     "tesseract.js": "^2.1.1",
